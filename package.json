@@ -1,0 +1,32 @@
+{
+	"name": "mariana",
+	"displayName": "Mariana",
+	"description": "Mariana theme from Sublime Text",
+	"icon": "thumbnails/Sublime Text.icns",
+	"galleryBanner": {
+		"color": "#23282f",
+		"theme": "dark"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mightbesimon/vscode-mariana/"
+	},
+	"author": "mightbesimon",
+	"publisher": "mightbesimon",
+	"version": "0.99.99",
+	"engines": {
+		"vscode": "^1.64.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Mariana",
+				"uiTheme": "vs-dark",
+				"path": "./themes/mariana-color-theme.json"
+			}
+		]
+	}
+}
