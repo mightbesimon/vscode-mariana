@@ -50,7 +50,14 @@ class TestHSLA(AssertColour, TestCase):
 		self.assert_hsla(c2, None, 1, None, 0.5)
 
 	def test_clone(self) -> None:
-		...
+		c1 = hsla(10, 10, 10)
+		c2 = c1.clone()
+		c3 = c1.clone(h=30)
+		c4 = c3.clone(a=0.5)
+
+		self.assert_hsla(c2, 10, 0.1, 0.1, None)
+		self.assert_hsla(c3, 30, 0.1, 0.1, None)
+		self.assert_hsla(c4, 30, 0.1, 0.1, 0.5)
 
 	def test_to_hsla(self) -> None:
 		...
@@ -82,7 +89,14 @@ class TestRGBA(AssertColour, TestCase):
 		self.assert_rgba(c, None, 50, None, 0.5)
 
 	def test_clone(self) -> None:
-		...
+		c1 = rgba(10, 10, 10)
+		c2 = c1.clone()
+		c3 = c1.clone(r=30)
+		c4 = c3.clone(a=0.5)
+
+		self.assert_rgba(c2, 10, 10, 10, None)
+		self.assert_rgba(c3, 30, 10, 10, None)
+		self.assert_rgba(c4, 30, 10, 10, 0.5)
 
 	def test_to_hsla(self) -> None:
 		mint = rgba(153, 199, 148)
