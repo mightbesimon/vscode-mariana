@@ -1,0 +1,87 @@
+'''	Copyright © 2022 mightbesimon.com
+	All rights reserved.
+
+	Material belonging to others may have been
+	used under Creative Commons Licence or with
+	explicit or implicit permission.
+'''
+
+from decimal import Decimal
+from unittest import TestCase, main
+from .colour import Colour, hsla, rgba
+
+
+class TestHSLA(TestCase):
+
+	def assert_hsla(self,
+		colour:hsla,
+		h:int,
+		s:Decimal,
+		l:Decimal,
+		a:Decimal
+	) -> None:
+		self.assertEqual(colour.h, h)
+		self.assertEqual(colour.s, s)
+		self.assertEqual(colour.l, l)
+		self.assertEqual(colour.a, a)
+
+	def test_init(self) -> None:
+		c = hsla(10, 10, 10)
+		self.assertIsInstance(c, Colour)
+		self.assertIsInstance(c, hsla)
+		self.assert_hsla(c, 10, 0.1, 0.1, None)
+
+		c = hsla(s=1, a=50)
+		self.assert_hsla(c, None, 1, None, 0.5)
+
+	def test_clone(self) -> None:
+		...
+
+	def test_to_hsla(self) -> None:
+		...
+
+	def test_to_rgba(self) -> None:
+		...
+
+	def test_to_hex(self) -> None:
+		...
+
+
+class TestRGBA(TestCase):
+
+	def assert_rgba(self,
+		colour:rgba,
+		r:int,
+		g:Decimal,
+		b:Decimal,
+		a:Decimal
+	) -> None:
+		self.assertEqual(colour.r, r)
+		self.assertEqual(colour.g, g)
+		self.assertEqual(colour.b, b)
+		self.assertEqual(colour.a, a)
+
+	def test_init(self) -> None:
+		c = rgba(10, 10, 10)
+		self.assertIsInstance(c, Colour)
+		self.assertIsInstance(c, rgba)
+		self.assert_rgba(c, 10, 10, 10, None)
+
+		c = rgba(g=50, a=0.5)
+		self.assert_rgba(c, None, 50, None, 0.5)
+
+	def test_clone(self) -> None:
+		...
+
+	def test_to_hsla(self) -> None:
+		...
+
+	def test_to_rgba(self) -> None:
+		...
+
+	def test_to_hex(self) -> None:
+		...
+
+
+if __name__ == '__main__':
+	main()
