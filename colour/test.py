@@ -11,6 +11,9 @@ from unittest import TestCase, main
 from . import Colour, hsla, rgba
 
 
+################################################################
+#######                   base classes                   #######
+################################################################
 class AssertColour:
 
 	def assert_hsla(self,
@@ -38,6 +41,9 @@ class AssertColour:
 		self.assertEqual(colour.a, a)
 
 
+################################################################
+#######                      tests                       #######
+################################################################
 class TestHSLA(AssertColour, TestCase):
 
 	def test_init(self) -> None:
@@ -116,5 +122,8 @@ class TestRGBA(AssertColour, TestCase):
 		self.assertEqual(orange.to_hex(), '#ee932b')
 
 
+################################################################
+#######                 MAIN STARTS HERE                 #######
+################################################################
 if __name__ == '__main__':
 	main()

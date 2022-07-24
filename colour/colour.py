@@ -12,6 +12,9 @@ from decimal import Decimal
 from typing import Tuple
 
 
+################################################################
+#######                   base classes                   #######
+################################################################
 class Colour(ABC):
 	'''	abstract base `Colour` class
 	'''
@@ -27,7 +30,9 @@ class Colour(ABC):
 		alpha = f'{c.a:02x}' if c.a and c.a!=1 else ''
 		return f'#{c.r:02x}{c.g:02x}{c.b:02x}{alpha}'
 
-
+################################################################
+#######                   dataclasses                    #######
+################################################################
 @dataclass
 class hsla(Colour):
 	h: int     = None	# hue        [0  , 359]
@@ -101,7 +106,6 @@ class hsla(Colour):
 				b=round((b_+m) * 255),
 				a=self.a,
 			)
-
 
 @dataclass
 class rgba(Colour):
