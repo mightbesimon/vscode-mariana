@@ -81,7 +81,11 @@ class TestRGBA(AssertColour, TestCase):
 		...
 
 	def test_to_hsla(self) -> None:
-		...
+		mint = rgba(153, 199, 148)
+		self.assert_hsla(mint.to_hsla(), 114, 0.31, 0.68, None)
+
+		orange = rgba(238, 147, 43)
+		self.assert_hsla(orange.to_hsla(), 32, 0.85, 0.55, None)
 
 	def test_to_rgba(self) -> None:
 		...

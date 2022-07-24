@@ -9,6 +9,7 @@
 from abc import ABC
 from dataclasses import dataclass
 from decimal import Decimal
+from typing import Tuple
 
 
 class Colour(ABC):
@@ -44,10 +45,10 @@ class hsla(Colour):
 			`l`: lightness `[0, 100]` or `[0.0, 1.0]`
 			`a`: alpha `[0, 100]` or `[0.0, 1.0]`
 		'''
-		if h and not 0<=h<360: raise ValueError('hue not in range [0, 359]')
-		if s and not 0<=s<=100: raise ValueError('saturation not in range [0, 100] or [0.0, 1.0]')
-		if l and not 0<=l<=100: raise ValueError('lightness not in range [0, 100] or [0.0, 1.0]')
-		if a and not 0<=a<=100: raise ValueError('alpha not in range [0, 100] or [0.0, 1.0]')
+		if h and not 0<=h<=359: raise ValueError(f'hue {h} not in range [0, 359]')
+		if s and not 0<=s<=100: raise ValueError(f'saturation {s} not in range [0, 100] or [0.0, 1.0]')
+		if l and not 0<=l<=100: raise ValueError(f'lightness {l} not in range [0, 100] or [0.0, 1.0]')
+		if a and not 0<=a<=100: raise ValueError(f'alpha {a} not in range [0, 100] or [0.0, 1.0]')
 
 		if h: self.h = h
 		if s: self.s = s/100 if s>1 else s
@@ -119,10 +120,10 @@ class rgba(Colour):
 			`b`: blue `[0, 255]`
 			`a`: alpha `[0, 100]` or `[0.0, 1.0]`
 		'''
-		if r and not 0<=r<=255: raise ValueError('red not in range [0, 255]')
-		if g and not 0<=g<=255: raise ValueError('green not in range [0, 255]')
-		if b and not 0<=b<=255: raise ValueError('blue not in range [0, 255]')
-		if a and not 0<=a<=100: raise ValueError('alpha not in range [0, 100] or [0.0, 1.0]')
+		if r and not 0<=r<=255: raise ValueError(f'red {r} not in range [0, 255]')
+		if g and not 0<=g<=255: raise ValueError(f'green {g} not in range [0, 255]')
+		if b and not 0<=b<=255: raise ValueError(f'blue {b} not in range [0, 255]')
+		if a and not 0<=a<=100: raise ValueError(f'alpha {a} not in range [0, 100] or [0.0, 1.0]')
 
 		if r: self.r = r
 		if g: self.g = g
@@ -145,8 +146,28 @@ class rgba(Colour):
 			a=a if a else self.a,
 		)
 
+	def normalise(self) -> Tuple[int, int, int]:
+		return (self.r/255, self.g/255, self.b/255)
+
 	def to_hsla(self) -> 'hsla':
-		raise NotImplemented
+		'''	[formula](https://www.rapidtables.com/convert/color/rgb-to-hsl.html)
+		'''
+		r_, g_, b_ = self.normalise()
+		C_max = max(r_, g_, b_)
+		C_min = min(r_, g_, b_)
+		delta = C_max - C_min
+
+		H = round(
+			0 if delta==0 else
+			60 * ((g_-b_)/delta % 6) if C_max==r_ else
+			60 * ((b_-r_)/delta + 2) if C_max==g_ else
+			60 * ((r_-g_)/delta + 4) if C_max==b_ else
+			None
+		)
+		L = round((C_max+C_min) / 2, 2)
+		S = round(delta / (1 - abs(2*L - 1)), 2)
+
+		return hsla(H, S, L, self.a)
 
 	def to_rgba(self) -> 'rgba':
 		return self
