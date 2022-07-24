@@ -74,7 +74,31 @@ class hsla(Colour):
 		return self
 
 	def to_rgba(self) -> 'rgba':
-		raise NotImplemented
+		'''	[formula](https://www.rapidtables.com/convert/color/hsl-to-rgb.html)
+		'''
+		C = (1 - abs(2*self.l - 1)) * self.s
+		X = C * (1 - abs(self.h/60%2 - 1))
+		m = self.l - C/2
+
+		table = {
+			(0, 60): (C, X, 0),
+			(60, 120): (X, C, 0),
+			(120, 180): (0, C, X),
+			(180, 240): (0, X, C),
+			(240, 300): (X, 0, C),
+			(300, 360): (C, 0, X),
+		}
+
+		for key, value in table.items():
+			if not key[0]<=self.h<key[1]: continue
+			r_, g_, b_ = value
+
+			return rgba(
+				r=round((r_+m) * 255),
+				g=round((g_+m) * 255),
+				b=round((b_+m) * 255),
+				a=self.a,
+			)
 
 
 @dataclass

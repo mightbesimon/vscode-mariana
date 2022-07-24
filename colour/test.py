@@ -11,7 +11,7 @@ from unittest import TestCase, main
 from .colour import Colour, hsla, rgba
 
 
-class TestHSLA(TestCase):
+class AssertColour:
 
 	def assert_hsla(self,
 		colour:hsla,
@@ -25,30 +25,6 @@ class TestHSLA(TestCase):
 		self.assertEqual(colour.l, l)
 		self.assertEqual(colour.a, a)
 
-	def test_init(self) -> None:
-		c = hsla(10, 10, 10)
-		self.assertIsInstance(c, Colour)
-		self.assertIsInstance(c, hsla)
-		self.assert_hsla(c, 10, 0.1, 0.1, None)
-
-		c = hsla(s=1, a=50)
-		self.assert_hsla(c, None, 1, None, 0.5)
-
-	def test_clone(self) -> None:
-		...
-
-	def test_to_hsla(self) -> None:
-		...
-
-	def test_to_rgba(self) -> None:
-		...
-
-	def test_to_hex(self) -> None:
-		...
-
-
-class TestRGBA(TestCase):
-
 	def assert_rgba(self,
 		colour:rgba,
 		r:int,
@@ -60,6 +36,37 @@ class TestRGBA(TestCase):
 		self.assertEqual(colour.g, g)
 		self.assertEqual(colour.b, b)
 		self.assertEqual(colour.a, a)
+
+
+class TestHSLA(AssertColour, TestCase):
+
+	def test_init(self) -> None:
+		c1 = hsla(10, 10, 10)
+		self.assertIsInstance(c1, Colour)
+		self.assertIsInstance(c1, hsla)
+		self.assert_hsla(c1, 10, 0.1, 0.1, None)
+
+		c2 = hsla(s=1, a=50)
+		self.assert_hsla(c2, None, 1, None, 0.5)
+
+	def test_clone(self) -> None:
+		...
+
+	def test_to_hsla(self) -> None:
+		...
+
+	def test_to_rgba(self) -> None:
+		mint = hsla(114, 31, 68)
+		self.assert_rgba(mint.to_rgba(), 153, 199, 148, None)
+
+		orange = hsla(32, 85, 55)
+		self.assert_rgba(orange.to_rgba(), 238, 147, 43, None)
+
+	def test_to_hex(self) -> None:
+		...
+
+
+class TestRGBA(AssertColour, TestCase):
 
 	def test_init(self) -> None:
 		c = rgba(10, 10, 10)
