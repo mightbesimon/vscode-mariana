@@ -6,7 +6,7 @@
 	explicit or implicit permission.
 '''
 
-from colour.palette import Palette, Mariana
+from colour.palette import Palette, Mariana, Dark
 
 class ThemeReference:
 
@@ -41,6 +41,6 @@ class ThemeReference:
 if __name__ == '__main__':
 	(
 		ThemeReference(filename='themes/mariana-reference.json')
-			.use_themes(Mariana)
+			.use_themes(Mariana, Dark)
 			.export_color_theme(filename='themes/mariana-color-theme.json')
 	)
