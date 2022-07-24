@@ -27,7 +27,7 @@ class Colour(ABC):
 
 	def to_hex(self) -> str:
 		c = self.to_rgba()
-		alpha = f'{c.a:02x}' if c.a and c.a!=1 else ''
+		alpha = f'{round(c.a*255):02x}' if c.a and c.a!=1 else ''
 		return f'#{c.r:02x}{c.g:02x}{c.b:02x}{alpha}'
 
 ################################################################
@@ -56,10 +56,10 @@ class hsla(Colour):
 		if l and not 0<=l<=100: raise ValueError(f'lightness {l} not in range [0, 100] or [0.0, 1.0]')
 		if a and not 0<=a<=100: raise ValueError(f'alpha {a} not in range [0, 100] or [0.0, 1.0]')
 
-		if h: self.h = h
-		if s: self.s = s/100 if s>1 else s
-		if l: self.l = l/100 if l>1 else l
-		if a: self.a = a/100 if a>1 else a
+		if h is not None: self.h = h
+		if s is not None: self.s = s/100 if s>1 else s
+		if l is not None: self.l = l/100 if l>1 else l
+		if a is not None: self.a = a/100 if a>1 else a
 
 	def clone(self,
 		h:int=None,
@@ -130,10 +130,10 @@ class rgba(Colour):
 		if b and not 0<=b<=255: raise ValueError(f'blue {b} not in range [0, 255]')
 		if a and not 0<=a<=100: raise ValueError(f'alpha {a} not in range [0, 100] or [0.0, 1.0]')
 
-		if r: self.r = r
-		if g: self.g = g
-		if b: self.b = b
-		if a: self.a = a/100 if a>1 else a
+		if r is not None: self.r = r
+		if g is not None: self.g = g
+		if b is not None: self.b = b
+		if a is not None: self.a = a/100 if a>1 else a
 
 	def clone(self,
 		r:int=None,
