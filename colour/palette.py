@@ -19,8 +19,6 @@ class Palette(Enum):
 #######                     palettes                     #######
 ################################################################
 class Mariana(Palette):
-	BLACK     = hsla(  0,  0,  0, 25)
-	GREY      = hsla(  0,  0, 20)
 	MARIANA_0 = hsla(210, 15, 22)
 	MARIANA_1 = hsla(210, 13, 40, 70)
 	MARIANA_2 = hsla(210, 13, 45)
@@ -29,9 +27,8 @@ class Mariana(Palette):
 	RED_0     = hsla(357, 79, 65)
 	RED_1     = hsla( 13, 93, 66)
 	ORANGE    = hsla( 32, 93, 66)
-	YELLOW    = hsla( 40, 94, 68, 25)
+	YELLOW    = hsla( 40, 94, 68)
 	MINT      = hsla(114, 31, 68)
 	TEAL      = hsla(180, 36, 54)
-	BLUE_0    = hsla(210, 50, 60)
-	BLUE_1    = hsla(210, 60, 60)
+	BLUE      = hsla(210, 50, 60)
 	PURPLE    = hsla(300, 30, 68)
