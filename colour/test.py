@@ -63,7 +63,11 @@ class TestHSLA(AssertColour, TestCase):
 		self.assert_rgba(orange.to_rgba(), 238, 147, 43, None)
 
 	def test_to_hex(self) -> None:
-		...
+		mint = rgba(153, 199, 148)
+		self.assertEqual(mint.to_hex(), '#99c794')
+
+		orange = rgba(238, 147, 43)
+		self.assertEqual(orange.to_hex(), '#ee932b')
 
 
 class TestRGBA(AssertColour, TestCase):
@@ -91,7 +95,11 @@ class TestRGBA(AssertColour, TestCase):
 		...
 
 	def test_to_hex(self) -> None:
-		...
+		mint = rgba(153, 199, 148)
+		self.assertEqual(mint.to_hex(), '#99c794')
+
+		orange = rgba(238, 147, 43)
+		self.assertEqual(orange.to_hex(), '#ee932b')
 
 
 if __name__ == '__main__':

@@ -24,7 +24,8 @@ class Colour(ABC):
 
 	def to_hex(self) -> str:
 		c = self.to_rgba()
-		return ''
+		alpha = f'{self.a:02x}' if self.a and self.a!=1 else ''
+		return f'#{self.r:02x}{self.g:02x}{self.b:02x}{alpha}'
 
 
 @dataclass
