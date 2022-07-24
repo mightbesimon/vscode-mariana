@@ -27,7 +27,7 @@ class Colour(ABC):
 
 	def to_hex(self) -> str:
 		c = self.to_rgba()
-		alpha = f'{round(c.a*255):02x}' if c.a and c.a!=1 else ''
+		alpha = f'{round(c.a*255):02x}' if c.a is not None and c.a!=1 else ''
 		return f'#{c.r:02x}{c.g:02x}{c.b:02x}{alpha}'
 
 ################################################################

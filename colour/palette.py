@@ -34,6 +34,8 @@ class Mariana(Palette):
 	PURPLE    = hsla(300, 30, 68)
 
 class Dark(Palette):
+	TRANSPARENT = rgba(0, 0, 0, 0)
+	SHADOW = rgba(0, 0, 0, 50)
 	DARK_0 = rgba(10, 10, 10)
 	DARK_1 = rgba(25, 25, 25)
 	DARK_2 = rgba(50, 50, 50)
