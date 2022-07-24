@@ -8,7 +8,7 @@
 
 from decimal import Decimal
 from unittest import TestCase, main
-from .colour import Colour, hsla, rgba
+from . import Colour, hsla, rgba
 
 
 class AssertColour:
