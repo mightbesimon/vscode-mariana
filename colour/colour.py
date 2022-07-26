@@ -35,6 +35,13 @@ class Colour(ABC):
 ################################################################
 @dataclass
 class hsla(Colour):
+	'''	`Colour` object in hsla space
+
+		optional `h`: hue `[0, 359]`
+		optional `s`: saturation `[0, 100]` or `[0.0, 1.0]`
+		optional `l`: lightness `[0, 100]` or `[0.0, 1.0]`
+		optional `a`: alpha `[0, 100]` or `[0.0, 1.0]`
+	'''
 	h: int     = None	# hue        [0  , 359]
 	s: Decimal = None	# saturation [0.0, 1.0]
 	l: Decimal = None	# lightness  [0.0, 1.0]
@@ -46,10 +53,10 @@ class hsla(Colour):
 		l:Decimal=None,
 		a:Decimal=None,
 	) -> None:
-		'''	`h`: hue `[0, 359]`
-			`s`: saturation `[0, 100]` or `[0.0, 1.0]`
-			`l`: lightness `[0, 100]` or `[0.0, 1.0]`
-			`a`: alpha `[0, 100]` or `[0.0, 1.0]`
+		'''	optional `h`: hue `[0, 359]`
+			optional `s`: saturation `[0, 100]` or `[0.0, 1.0]`
+			optional `l`: lightness `[0, 100]` or `[0.0, 1.0]`
+			optional `a`: alpha `[0, 100]` or `[0.0, 1.0]`
 		'''
 		if h and not 0<=h<=359: raise ValueError(f'hue {h} not in range [0, 359]')
 		if s and not 0<=s<=100: raise ValueError(f'saturation {s} not in range [0, 100] or [0.0, 1.0]')
@@ -81,6 +88,7 @@ class hsla(Colour):
 		)
 
 	def to_hsla(self) -> 'hsla':
+		'''return self'''
 		return self
 
 	def to_rgba(self) -> 'rgba':
@@ -112,6 +120,13 @@ class hsla(Colour):
 
 @dataclass
 class rgba(Colour):
+	'''	`Colour` object in rgba space
+optional
+		optional `r`: red `[0, 255]`
+		optional `g`: green `[0, 255]`
+		optional `b`: blue `[0, 255]`
+		optional `a`: alpha `[0, 100]` or `[0.0, 1.0]`
+	'''
 	r: int     = None	# red   [0  , 255]
 	g: int     = None	# green [0  , 255]
 	b: int     = None	# blue  [0  , 255]
@@ -123,10 +138,10 @@ class rgba(Colour):
 		b:int=None,
 		a:Decimal=None,
 	) -> None:
-		'''	`r`: red `[0, 255]`
-			`g`: green `[0, 255]`
-			`b`: blue `[0, 255]`
-			`a`: alpha `[0, 100]` or `[0.0, 1.0]`
+		'''	optional `r`: red `[0, 255]`
+			optional `g`: green `[0, 255]`
+			optional `b`: blue `[0, 255]`
+			optional `a`: alpha `[0, 100]` or `[0.0, 1.0]`
 		'''
 		if r and not 0<=r<=255: raise ValueError(f'red {r} not in range [0, 255]')
 		if g and not 0<=g<=255: raise ValueError(f'green {g} not in range [0, 255]')
@@ -154,7 +169,9 @@ class rgba(Colour):
 			a=a if a else self.a,
 		)
 
-	def normalise(self) -> Tuple[int, int, int]:
+	def normalise(self) -> Tuple[float, float, float]:
+		'''	normalise to `(r, g, b)` between `0.0` and `1.0`
+		'''
 		return (self.r/255, self.g/255, self.b/255)
 
 	def to_hsla(self) -> 'hsla':
@@ -178,4 +195,5 @@ class rgba(Colour):
 		return hsla(H, S, L, self.a)
 
 	def to_rgba(self) -> 'rgba':
+		'''return self'''
 		return self

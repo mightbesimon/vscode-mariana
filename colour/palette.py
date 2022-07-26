@@ -14,8 +14,23 @@ from . import Colour, hsla, rgba
 #######                    metaclass                     #######
 ################################################################
 class MetaPalette(type):
-
+	''' metaclass for `Palette`\n
+		can be used as a `type` for type hinting\n
+		e.g.
+		```python
+		def use_theme(self, theme:MetaPalette) -> None:
+			self.theme:MetaPalette = theme
+		```
+	'''
 	def __iter__(self) -> List[Tuple[str, Colour]]:
+		'''	return all enum items from this enum class
+			as well as from base classes\n
+			e.g.
+			```python
+			for name, colour in Palette:
+				content = content.replace(name, colour.to_hex())
+			```
+		'''
 		iter_self = ( (name, attr)
 			for name, attr in self.__dict__.items()
 			if isinstance(attr, Colour)
@@ -29,6 +44,13 @@ class MetaPalette(type):
 			return iter_self
 
 	def __contains__(self, obj:Colour) -> bool:
+		'''	check if obj is in this enum class
+			as well as in base classes\n
+			e.g.
+			```python
+			rgba(0,0,0) in Palette  # True
+			```
+		'''
 		in_self = obj in [ attr
 			for name, attr in self.__dict__.items()
 			if isinstance(attr, Colour)
@@ -42,6 +64,13 @@ class MetaPalette(type):
 #######                   base palette                   #######
 ################################################################
 class Palette(metaclass=MetaPalette):
+	''' base palette enum\n
+		extend this enum class like so
+		```python
+		class Mariana(Palette):
+			...
+		```
+	'''
 	BLACK  = rgba(  0,   0,   0)
 	WHITE  = rgba(255, 255, 255)
 	SHADOW = BLACK.clone(a=50)
@@ -51,6 +80,8 @@ class Palette(metaclass=MetaPalette):
 #######                     palettes                     #######
 ################################################################
 class Mariana(Palette):
+	'''	mariana theme from sublime
+	'''
 	MARIANA  = hsla(210, 15, 22)
 	DARK_0   = MARIANA.clone(l=11)
 	DARK_1   = MARIANA.clone(l=13)

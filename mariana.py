@@ -8,6 +8,7 @@
 
 from colour.palette import MetaPalette, Mariana
 
+
 class ThemeReference:
 
 	def __init__(self, filename:str) -> None:
