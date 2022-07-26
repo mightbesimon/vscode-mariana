@@ -2,7 +2,7 @@
 	"name": "mariana-sublime",
 	"displayName": "Mariana",
 	"description": "I already tried the other ones",
-	"icon": "thumbnails/Sublime Text.icns",
+	"icon": "thumbnails/Sublime Text.png",
 	"galleryBanner": {
 		"color": "#303841",
 		"theme": "dark"
