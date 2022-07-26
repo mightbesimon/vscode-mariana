@@ -91,7 +91,7 @@ class TestHSLA(AssertColour, TestCase):
 		mint = hsla(114, 31, 68)
 		self.assertEqual(mint.to_hex(), '#99c794')
 
-		orange = hsla(32, 85, 55, 100)
+		orange = hsla(32, 85, 55)
 		self.assertEqual(orange.to_hex(), '#ee932b')
 
 
@@ -145,6 +145,9 @@ class TestRGBA(AssertColour, TestCase):
 
 		orange = rgba(238, 147, 43, 100)
 		self.assertEqual(orange.to_hex(), '#ee932b')
+
+		transparent = rgba(0, 0, 0, 0)
+		self.assertEqual(transparent.to_hex(), '#00000000')
 
 
 ################################################################

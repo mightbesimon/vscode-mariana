@@ -81,10 +81,10 @@ class hsla(Colour):
 			optionally modify value fields
 		'''
 		return self.__class__(
-			h=h if h else self.h,
-			s=s if s else self.s,
-			l=l if l else self.l,
-			a=a if a else self.a,
+			h=h if h is not None else self.h,
+			s=s if s is not None else self.s,
+			l=l if l is not None else self.l,
+			a=a if a is not None else self.a,
 		)
 
 	def to_hsla(self) -> 'hsla':
@@ -163,10 +163,10 @@ optional
 			optionally modify value fields
 		'''
 		return self.__class__(
-			r=r if r else self.r,
-			g=g if g else self.g,
-			b=b if b else self.b,
-			a=a if a else self.a,
+			r=r if r is not None else self.r,
+			g=g if g is not None else self.g,
+			b=b if b is not None else self.b,
+			a=a if a is not None else self.a,
 		)
 
 	def normalise(self) -> Tuple[float, float, float]:
