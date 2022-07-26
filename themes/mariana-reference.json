@@ -3,7 +3,7 @@
 	"type": "dark",
 	"colors": {
 		"focusBorder": "TRANSPARENT",
-		"foreground": "MARIANA_4",
+		"foreground": "LIGHT_1",
 		"activityBar.background": "DARK_1",
 		"activityBarBadge.background": "RED_0",
 		"badge.background": "RED_0",
@@ -15,27 +15,27 @@
 		"diffEditor.removedTextBackground": "RED_1",
 		"dropdown.background": "#23292e",
 		"dropdown.listBackground": "#23292e",
-		"editor.foreground": "MARIANA_4",
-		"editor.background": "MARIANA_0",
+		"editor.foreground": "LIGHT_1",
+		"editor.background": "MEDIUM_0",
 		"editor.foldBackground": "BLUE40",
-		"editor.lineHighlightBackground": "MARIANA_1",
-		"editor.hoverHighlightBackground": "MARIANA_1",
-		"editor.selectionBackground": "MARIANA_1",
-		"editor.inactiveSelectionBackground": "MARIANA_1",
+		"editor.lineHighlightBackground": "MEDIUM_1",
+		"editor.hoverHighlightBackground": "MEDIUM_1",
+		"editor.selectionBackground": "MEDIUM_1",
+		"editor.inactiveSelectionBackground": "MEDIUM_1",
 		"editor.selectionHighlightBorder": "TEAL",
-		"editor.selectionHighlightBackground": "MARIANA_0",
+		"editor.selectionHighlightBackground": "MEDIUM_0",
 		"editor.findMatchBackground": "YELLOW40",
 		"editor.findMatchHighlightBorder": "TEAL",
-		"editor.findMatchHighlightBackground": "MARIANA_0",
+		"editor.findMatchHighlightBackground": "MEDIUM_0",
 		"editor.findRangeHighlightBorder": "TEAL",
-		"editor.findRangeHighlightBackground": "MARIANA_0",
+		"editor.findRangeHighlightBackground": "MEDIUM_0",
 		"editor.rangeHighlightBorder": "TEAL",
-		"editor.rangeHighlightBackground": "MARIANA_0",
+		"editor.rangeHighlightBackground": "MEDIUM_0",
 		"editor.symbolHighlightBorder": "TEAL",
-		"editor.symbolHighlightBackground": "MARIANA_0",
+		"editor.symbolHighlightBackground": "MEDIUM_0",
 		"editorCursor.foreground": "ORANGE",
-		"editorLineNumber.foreground": "MARIANA_3c0",
-		"editorLineNumber.activeForeground": "MARIANA_4c0",
+		"editorLineNumber.foreground": "LIGHT_0c0",
+		"editorLineNumber.activeForeground": "LIGHT_1c0",
 		"editorError.foreground": "RED_0",
 		"editorError.background": "RED_040",
 		"editorWarning.foreground": "YELLOW",
@@ -116,35 +116,35 @@
 		"problemsInfoIcon.foreground": "BLUE",
 		"progressBar.background": "DARK_1",
 		"scrollbar.shadow": "TRANSPARENT",
-		"scrollbarSlider.background": "MARIANA_1",
-		"scrollbarSlider.activeBackground": "MARIANA_3",
-		"scrollbarSlider.hoverBackground": "MARIANA_2",
-		"selection.background": "MARIANA_1",
-		"sideBar.foreground": "MARIANA_4",
+		"scrollbarSlider.background": "MEDIUM_1",
+		"scrollbarSlider.activeBackground": "LIGHT_0",
+		"scrollbarSlider.hoverBackground": "MEDIUM_2",
+		"selection.background": "MEDIUM_1",
+		"sideBar.foreground": "LIGHT_1",
 		"sideBar.background": "DARK_1",
-		"sideBarSectionHeader.background": "MARIANA_0",
-		"sideBarTitle.foreground": "MARIANA_3",
+		"sideBarSectionHeader.background": "MEDIUM_0",
+		"sideBarTitle.foreground": "LIGHT_0",
 		"statusBar.focusBorder": "TRANSPARENT",
-		"statusBar.foreground": "MARIANA_4",
+		"statusBar.foreground": "LIGHT_1",
 		"statusBar.background": "DARK_0",
 		"statusBar.debuggingBackground": "ORANGE",
 		"statusBar.noFolderBackground": "DARK_2",
-		"statusBarItem.hoverBackground": "MARIANA_060",
-		"statusBarItem.activeBackground": "MARIANA_0a0",
+		"statusBarItem.hoverBackground": "MEDIUM_060",
+		"statusBarItem.activeBackground": "MEDIUM_0a0",
 		"statusBarItem.remoteBackground": "DARK_0",
 		"tab.border": "TRANSPARENT",
 		"tab.activeBorderTop": "DARK_1",
-		"tab.activeForeground": "MARIANA_4",
-		"tab.activeBackground": "MARIANA_0",
-		"tab.inactiveForeground": "MARIANA_3",
+		"tab.activeForeground": "LIGHT_1",
+		"tab.activeBackground": "MEDIUM_0",
+		"tab.inactiveForeground": "LIGHT_0",
 		"tab.inactiveBackground": "DARK_1",
-		"tab.hoverForeground": "MARIANA_4",
-		"tab.hoverBackground": "MARIANA_080",
+		"tab.hoverForeground": "LIGHT_1",
+		"tab.hoverBackground": "MEDIUM_080",
 		"tab.unfocusedActiveBorderTop": "DARK_1",
-		"tab.unfocusedActiveForeground": "MARIANA_3",
-		"tab.unfocusedHoverForeground": "MARIANA_4",
+		"tab.unfocusedActiveForeground": "LIGHT_0",
+		"tab.unfocusedHoverForeground": "LIGHT_1",
 		"terminal.ansiBlack": "DARK_1",
-		"terminal.ansiWhite": "MARIANA_4",
+		"terminal.ansiWhite": "LIGHT_1",
 		"terminal.ansiRed": "RED_0",
 		"terminal.ansiYellow": "YELLOW",
 		"terminal.ansiGreen": "MINT",
@@ -152,26 +152,26 @@
 		"terminal.ansiBlue": "BLUE",
 		"terminal.ansiMagenta": "PURPLE",
 		"terminal.ansiBrightBlack": "DARK_1",
-		"terminal.ansiBrightWhite": "MARIANA_4",
+		"terminal.ansiBrightWhite": "LIGHT_1",
 		"terminal.ansiBrightRed": "RED_0",
 		"terminal.ansiBrightYellow": "YELLOW",
 		"terminal.ansiBrightGreen": "MINT",
 		"terminal.ansiBrightCyan": "TEAL",
 		"terminal.ansiBrightBlue": "BLUE",
 		"terminal.ansiBrightMagenta": "PURPLE",
-		"terminal.background": "MARIANA_0",
+		"terminal.background": "MEDIUM_0",
 		"terminal.selectionBackground": "BLUEc0",
 		"terminalCursor.foreground": "MINT80",
-		"terminalCursor.background": "MARIANA_4",
+		"terminalCursor.background": "LIGHT_1",
 		"textBlockQuote.border": "TEAL",
-		"textBlockQuote.background": "MARIANA_1",
+		"textBlockQuote.background": "MEDIUM_1",
 		"textLink.activeForeground": "BLUEc0",
 		"textLink.foreground": "BLUE",
 		"textPreformat.foreground": "RED_1",
-		"titleBar.activeBackground": "#23292e",
-		"titleBar.activeForeground": "#ffffffdd",
-		"titleBar.inactiveBackground": "#23292e",
-		"titleBar.inactiveForeground": "#ffffff70",
+		"titleBar.activeBackground": "DARK_1",
+		"titleBar.activeForeground": "LIGHT_1",
+		"titleBar.inactiveBackground": "DARK_1",
+		"titleBar.inactiveForeground": "LIGHT_0",
 		"widget.shadow": "SHADOW"
 	},
 	"tokenColors": [
@@ -184,7 +184,7 @@
 				"string.quoted.docstring punctuation.definition"
 			],
 			"settings": {
-				"foreground": "MARIANA_3"
+				"foreground": "LIGHT_0"
 			}
 		},
 		{
@@ -261,21 +261,21 @@
 				"punctuation.terminator"
 			],
 			"settings": {
-				"foreground": "MARIANA_3"
+				"foreground": "LIGHT_0"
 			}
 		},
 		{
 			"name": "Punctuation",
 			"scope": "punctuation.section",
 			"settings": {
-				"foreground": "MARIANA_4"
+				"foreground": "LIGHT_1"
 			}
 		},
 		{
 			"name": "Accessor",
 			"scope": "punctuation.accessor",
 			"settings": {
-				"foreground": "MARIANA_3"
+				"foreground": "LIGHT_0"
 			}
 		},
 		{
@@ -433,7 +433,7 @@
 			"name": "YAML String",
 			"scope": "source.yaml string.unquoted",
 			"settings": {
-				"foreground": "MARIANA_4"
+				"foreground": "LIGHT_1"
 			}
 		},
 		{
@@ -464,7 +464,7 @@
 				"markup.underline.link"
 			],
 			"settings": {
-				"foreground": "#6699cc"
+				"foreground": "BLUE"
 			}
 		},
 		{
@@ -619,7 +619,7 @@
 			"name": "CSS Properties",
 			"scope": "support.type.property-name",
 			"settings": {
-				"foreground": "MARIANA_4"
+				"foreground": "LIGHT_1"
 			}
 		},
 		{

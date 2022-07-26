@@ -11,3 +11,4 @@
 ################################################################
 
 from .colour import Colour, hsla, rgba
+Color = Colour	# American
