@@ -1,10 +1,10 @@
 {
 	"name": "mariana",
 	"displayName": "Mariana",
-	"description": "Mariana theme from Sublime Text",
+	"description": "I already tried the other ones",
 	"icon": "thumbnails/Sublime Text.icns",
 	"galleryBanner": {
-		"color": "#23282f",
+		"color": "#303841",
 		"theme": "dark"
 	},
 	"repository": {
