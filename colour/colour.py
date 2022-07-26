@@ -61,6 +61,9 @@ class hsla(Colour):
 		if l is not None: self.l = l/100 if l>1 else l
 		if a is not None: self.a = a/100 if a>1 else a
 
+	def __call__(self, **kwargs) -> 'hsla':
+		return self.clone(**kwargs)
+
 	def clone(self,
 		h:int=None,
 		s:Decimal=None,
