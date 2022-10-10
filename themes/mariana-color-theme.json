@@ -583,6 +583,71 @@
       "settings": { "foreground": "#ec5f66" }
     },
     {
+      "name": "Solidity pragma name",
+      "scope": "source.solidity entity.name.tag.pragma",
+      "settings": { "foreground": "#c695c6" }
+    },
+    {
+      "name": "Solidity pragma constant",
+      "scope": "source.solidity constant.other.pragma",
+      "settings": { "foreground": "#f9ae58" }
+    },
+    {
+      "name": "Solidity interface",
+      "scope": "source.solidity entity.name.type.interface",
+      "settings": { "foreground": "#d8dee9", "fontStyle": "" }
+    },
+    {
+      "name": "Solidity entity name type",
+      "scope": [
+        "source.solidity entity.name.type",
+        "source.solidity support.type.primitive",
+        "source.solidity storage.type.modifier"
+      ],
+      "settings": { "foreground": "#ec5f66" }
+    },
+    {
+      "name": "Solidity entity name type",
+      "scope": [
+        "source.solidity entity.name.type.event",
+        "source.solidity entity.name.type.contract"
+      ],
+      "settings": { "foreground": "#6699cc" }
+    },
+    {
+      "name": "Solidity modifier",
+      "scope": "source.solidity entity.name.function.modifier",
+      "settings": { "foreground": "#6699cc", "fontStyle": "italic" }
+    },
+    {
+      "name": "Solidity storage modifier",
+      "scope": "source.solidity storage.modifier",
+      "settings": { "foreground": "#c695c6" }
+    },
+    {
+      "name": "Solidity comments",
+      "scope": [
+        "comment.block.documentation",
+        "comment.block.documentation storage.type"
+      ],
+      "settings": { "foreground": "#a6adb9" }
+    },
+    {
+      "name": "Solidity library",
+      "scope": "entity.name.type.library",
+      "settings": { "foreground": "#d8dee9", "fontStyle": "" }
+    },
+    {
+      "name": "Solidity language variable",
+      "scope": "source.solidity variable.language",
+      "settings": { "foreground": "#c695c6" }
+    },
+    {
+      "name": "Solidity mapping",
+      "scope": "source.solidity keyword.operator.mapping",
+      "settings": { "foreground": "#c695c6" }
+    },
+    {
       "scope": "constant.numeric.line-number.match",
       "settings": { "foreground": "#ec5f66" }
     },
