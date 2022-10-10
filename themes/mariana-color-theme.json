@@ -319,7 +319,11 @@
     },
     {
       "name": "Entity name type module",
-      "scope": ["entity.name.type.module", "entity.name.type"],
+      "scope": [
+        "entity.name.type.module",
+        "entity.name.type",
+        "punctuation.definition.typeparameters"
+      ],
       "settings": { "foreground": "#6699cc", "fontStyle": "italic" }
     },
     {
