@@ -541,6 +541,11 @@
       "settings": { "foreground": "#d8dee9" }
     },
     {
+      "name": "JSON Properties",
+      "scope": "support.type.property-name.json",
+      "settings": { "foreground": "#99c794", "fontStyle": "" }
+    },
+    {
       "scope": "constant.numeric.line-number.match",
       "settings": { "foreground": "#ec5f66" }
     },
