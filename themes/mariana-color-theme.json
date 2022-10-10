@@ -546,6 +546,43 @@
       "settings": { "foreground": "#99c794", "fontStyle": "" }
     },
     {
+      "name": "Graphql type",
+      "scope": "support.type.graphql",
+      "settings": { "foreground": "#f9ae58", "fontStyle": "" }
+    },
+    {
+      "name": "Graphql referenced type",
+      "scope": [
+        "meta.type.list.graphql support.type.graphql",
+        "meta.type.object.graphql support.type.graphql"
+      ],
+      "settings": { "foreground": "#d8dee9" }
+    },
+    {
+      "name": "Graphql variable",
+      "scope": ["variable.graphql", "constant.character.enum.graphql"],
+      "settings": { "foreground": "#f9ae58" }
+    },
+    {
+      "name": "Graphql string",
+      "scope": [
+        "meta.type.interface.graphql meta.type.object.graphql meta.variables.graphql support.type.graphql",
+        "meta.type.object.graphql meta.variables.graphql",
+        "graphql.description.SINGLELINE"
+      ],
+      "settings": { "foreground": "#99c794" }
+    },
+    {
+      "name": "Graphql entity",
+      "scope": "entity.name.function.directive.graphql",
+      "settings": { "foreground": "#6699cc" }
+    },
+    {
+      "name": "Graphql braces",
+      "scope": "meta.brace.square.graphql",
+      "settings": { "foreground": "#ec5f66" }
+    },
+    {
       "scope": "constant.numeric.line-number.match",
       "settings": { "foreground": "#ec5f66" }
     },
