@@ -318,6 +318,11 @@
       "settings": { "foreground": "#5fb4b4" }
     },
     {
+      "name": "Entity name type module",
+      "scope": ["entity.name.type.module", "entity.name.type"],
+      "settings": { "foreground": "#6699cc", "fontStyle": "italic" }
+    },
+    {
       "name": "Entity name",
       "scope": [
         "entity.name",
@@ -326,6 +331,11 @@
         "-entity.name.label"
       ],
       "settings": { "foreground": "#f9ae58" }
+    },
+    {
+      "name": "Entity name",
+      "scope": ["meta.function-call entity.name.function"],
+      "settings": { "foreground": "#6699cc" }
     },
     {
       "name": "Inherited class",
@@ -385,6 +395,11 @@
       "name": "Invalid deprecated",
       "scope": "invalid.deprecated",
       "settings": { "foreground": "#f9ae58" }
+    },
+    {
+      "name": "Constant object",
+      "scope": ["variable.other.constant.object"],
+      "settings": { "foreground": "#6699cc", "fontStyle": "italic" }
     },
     {
       "name": "YAML Key",
