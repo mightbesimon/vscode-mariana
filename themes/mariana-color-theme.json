@@ -214,14 +214,14 @@
       "scope": "string",
       "settings": { "foreground": "#99c794" }
     },
-    {
-      "name": "Punctuation",
-      "scope": [
-        "punctuation.definition",
-        "-punctuation.definition.numeric.base"
-      ],
-      "settings": { "foreground": "#5fb4b4" }
-    },
+    // {
+    //   "name": "Punctuation",
+    //   "scope": [
+    //     "punctuation.definition",
+    //     "-punctuation.definition.numeric.base"
+    //   ],
+    //   "settings": { "foreground": "#5fb4b4" }
+    // },
     {
       "name": "Number",
       "scope": "constant.numeric",
@@ -233,9 +233,19 @@
       "settings": { "foreground": "#ec5f66", "fontStyle": "italic" }
     },
     {
-      "name": "User-defined constant",
-      "scope": ["constant.character", "constant.other"],
+      "name": "Function type",
+      "scope": "support.type",
+      "settings": { "fontStyle": "italic" }
+    },
+    {
+      "name": "User-defined constant character",
+      "scope": ["constant.character"],
       "settings": { "foreground": "#c695c6" }
+    },
+    {
+      "name": "User-defined constant",
+      "scope": ["constant.other"],
+      "settings": {}
     },
     {
       "name": "Member Variable",
@@ -295,6 +305,16 @@
     {
       "name": "Entity name",
       "scope": "entity.name.function",
+      "settings": { "foreground": "#5fb4b4" }
+    },
+    {
+      "name": "Decorator name",
+      "scope": "entity.name.function.decorator",
+      "settings": { "foreground": "#6699cc" }
+    },
+    {
+      "name": "Decorator puntuation",
+      "scope": "punctuation.definition.decorator",
       "settings": { "foreground": "#5fb4b4" }
     },
     {
