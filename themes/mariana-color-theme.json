@@ -407,6 +407,16 @@
       "settings": { "foreground": "#6699cc", "fontStyle": "italic" }
     },
     {
+      "name": "Component",
+      "scope": "support.class.component",
+      "settings": { "foreground": "#ec5f66" }
+    },
+    {
+      "name": "Storage modifier",
+      "scope": "storage.modifier",
+      "settings": { "foreground": "#c695c6" }
+    },
+    {
       "name": "YAML Key",
       "scope": "entity.name.tag.yaml",
       "settings": { "foreground": "#5fb4b4" }
@@ -623,11 +633,6 @@
       "name": "Solidity modifier",
       "scope": "source.solidity entity.name.function.modifier",
       "settings": { "foreground": "#6699cc", "fontStyle": "italic" }
-    },
-    {
-      "name": "Solidity storage modifier",
-      "scope": "source.solidity storage.modifier",
-      "settings": { "foreground": "#c695c6" }
     },
     {
       "name": "Solidity comments",
