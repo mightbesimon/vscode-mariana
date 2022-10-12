@@ -653,6 +653,16 @@
       "settings": { "foreground": "#c695c6" }
     },
     {
+      "name": "Rainbow csv 0",
+      "scope": ["rainbowgroup markup.bold", "rainbowgroup entity.name.type"],
+      "settings": { "fontStyle": "" }
+    },
+    {
+      "name": "Rainbow csv 1",
+      "scope": "rainbowgroup constant.numeric",
+      "settings": { "foreground": "#c695c6" }
+    },
+    {
       "scope": "constant.numeric.line-number.match",
       "settings": { "foreground": "#ec5f66" }
     },
