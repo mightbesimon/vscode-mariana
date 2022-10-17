@@ -244,6 +244,11 @@
       "settings": { "foreground": "#c695c6" }
     },
     {
+      "name": "User-defined constant character placeholder Python",
+      "scope": ["meta.fstring.python constant.character.format.placeholder"],
+      "settings": { "foreground": "#d8dee9" }
+    },
+    {
       "name": "User-defined constant",
       "scope": ["constant.other"],
       "settings": {}
