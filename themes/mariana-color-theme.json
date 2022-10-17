@@ -417,6 +417,11 @@
       "settings": { "foreground": "#c695c6" }
     },
     {
+      "name": "Storage modifier Python",
+      "scope": "source.python storage.modifier",
+      "settings": { "foreground": "#ec5f66" }
+    },
+    {
       "name": "YAML Key",
       "scope": "entity.name.tag.yaml",
       "settings": { "foreground": "#5fb4b4" }
