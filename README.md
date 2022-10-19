@@ -1,14 +1,16 @@
 # Mariana ![](https://github.com/mightbesimon/vscode-mariana/actions/workflows/publish.yml/badge.svg)
 
-> Most faithful port of Sublime Mariana theme!
+> I already tried the other ones so you don't need to.
 
-Wanted a one to one copy of sublime, I already tried the bother ones :(
+Most faithful port of Sublime Mariana theme!
 
 Wow this took way too long 😅
 
-![previwe](thumbnails/mariana.png)
+![preview](thumbnails/mariana.png)
 
 # Todo List
+
+🚧 ruler
 
 🚧 diff editor
 
@@ -67,13 +69,14 @@ Wow this took way too long 😅
 # Contributors
 
 - **Simon** - [mightbesimon](https://github.com/mightbesimon)
+- [gijocode](https://github.com/gijocode)
+- [guillemap](https://github.com/guillemap)
 - you?
 
 # Colour Reference
 
 ```python
 class Mariana(Palette):
-
 	MARIANA  = hsla(210, 15, 22)
 	DARK_0   = MARIANA.clone(l=11)
 	DARK_1   = MARIANA.clone(l=13)
@@ -83,8 +86,8 @@ class Mariana(Palette):
 	MEDIUM_2 = MARIANA.clone(l=45)
 	LIGHT_0  = hsla(220, 12, 69)
 	LIGHT_1  = hsla(220, 28, 88)
-	RED_0    = hsla(357, 79, 65)
-	RED_1    = hsla( 13, 93, 66)
+	RED      = hsla(357, 79, 65)
+	CORAL    = hsla( 13, 93, 66)
 	ORANGE   = hsla( 32, 93, 66)
 	YELLOW   = hsla( 40, 94, 68)
 	MINT     = hsla(114, 31, 68)
