@@ -6,7 +6,7 @@
 	explicit or implicit permission.
 '''
 
-from abc import ABC
+from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from decimal import Decimal
 from typing import Tuple
@@ -18,13 +18,15 @@ from typing import Tuple
 class Colour(ABC):
 	'''	abstract base `Colour` class
 	'''
-
+	@abstractmethod
 	def to_hsla(self) -> 'hsla':
 		raise NotImplemented
 
+	@abstractmethod
 	def to_rgba(self) -> 'rgba':
 		raise NotImplemented
 
+	@abstractmethod
 	def to_hex(self) -> str:
 		c = self.to_rgba()
 		alpha = f'{round(c.a*255):02x}' if c.a is not None and c.a!=1 else ''
@@ -121,7 +123,7 @@ class hsla(Colour):
 @dataclass
 class rgba(Colour):
 	'''	`Colour` object in rgba space
-optional
+
 		optional `r`: red `[0, 255]`
 		optional `g`: green `[0, 255]`
 		optional `b`: blue `[0, 255]`

@@ -7,15 +7,15 @@
 		"activityBar.background": "DARK_1",
 		"activityBar.dropBorder": "MINT",
 		"activityBar.activeBorder": "MINT",
-		"activityBarBadge.background": "RED_0",
-		"badge.background": "RED_0",
+		"activityBarBadge.background": "RED",
+		"badge.background": "RED",
 		"button.background": "MINT",
 		"button.foreground": "DARK_1",
 		"button.hoverBackground": "MINTc0",
 		"button.secondaryBackground": "ORANGE",
 		"button.secondaryHoverBackground": "ORANGEc0",
 		"diffEditor.insertedTextBackground": "MINT",
-		"diffEditor.removedTextBackground": "RED_1",
+		"diffEditor.removedTextBackground": "CORAL",
 		"dropdown.background": "DARK_2",
 		"dropdown.listBackground": "DARK_2",
 		"editor.foreground": "LIGHT_1",
@@ -39,8 +39,8 @@
 		"editorCursor.foreground": "ORANGE",
 		"editorLineNumber.foreground": "LIGHT_0c0",
 		"editorLineNumber.activeForeground": "LIGHT_1c0",
-		"editorError.foreground": "RED_0",
-		"editorError.background": "RED_040",
+		"editorError.foreground": "RED",
+		"editorError.background": "RED40",
 		"editorWarning.foreground": "YELLOW",
 		"editorWarning.background": "YELLOW40",
 		"editorInfo.foreground": "BLUE",
@@ -54,7 +54,7 @@
 		"editorGroupHeader.tabsBackground": "DARK_1",
 		"editorGutter.addedBackground": "MINT",
 		"editorGutter.modifiedBackground": "ORANGE",
-		"editorGutter.deletedBackground": "RED_0",
+		"editorGutter.deletedBackground": "RED",
 		"editorIndentGuide.background": "MEDIUM_1",
 		"editorOverviewRuler.findMatchForeground": "YELLOW40",
 		"editorOverviewRuler.rangeHighlightForeground": "YELLOW40",
@@ -63,8 +63,8 @@
 		"editorOverviewRuler.wordHighlightStrongForeground": "YELLOW40",
 		"editorOverviewRuler.addedForeground": "MINT",
 		"editorOverviewRuler.modifiedForeground": "ORANGE",
-		"editorOverviewRuler.deletedForeground": "RED_0",
-		"editorOverviewRuler.errorForeground": "RED_0",
+		"editorOverviewRuler.deletedForeground": "RED",
+		"editorOverviewRuler.errorForeground": "RED",
 		"editorOverviewRuler.warningForeground": "YELLOW",
 		"editorOverviewRuler.infoForeground": "BLUE",
 		"editorOverviewRuler.bracketMatchForeground": "TEAL",
@@ -88,13 +88,13 @@
 		"inputOption.activeBackground": "MINT",
 		"inputOption.activeForeground": "MEDIUM_0",
 		"inputOption.hoverBackground": "MINT80",
-		"inputValidation.errorBorder": "RED_0",
-		"inputValidation.errorBackground": "RED_0c0",
+		"inputValidation.errorBorder": "RED",
+		"inputValidation.errorBackground": "REDc0",
 		"inputValidation.warningBorder": "YELLOW",
 		"inputValidation.warningBackground": "YELLOWc0",
 		"inputValidation.infoBorder": "BLUE",
 		"inputValidation.infoBackground": "BLUEc0",
-		"list.errorForeground": "RED_0",
+		"list.errorForeground": "RED",
 		"list.warningForeground": "YELLOW",
 		"list.dropBackground": "MINT80",
 		"list.activeSelectionBackground": "MEDIUM_0",
@@ -104,18 +104,18 @@
 		"list.hoverBackground": "DARK_2",
 		"listFilterWidget.background": "MINT",
 		"listFilterWidget.outline": "MINT",
-		"listFilterWidget.noMatchesOutline": "RED_0",
+		"listFilterWidget.noMatchesOutline": "RED",
 		"merge.currentContentBackground": "#FAB76340",
 		"merge.currentHeaderBackground": "#FAB76370",
 		"merge.incomingContentBackground": "#A3CE9E40",
 		"merge.incomingHeaderBackground": "#A3CE9E70",
 		"minimap.background": "MEDIUM_0e0",
-		"minimap.errorHighlight": "RED_0",
+		"minimap.errorHighlight": "RED",
 		"minimap.warningHighlight": "YELLOW",
 		"minimap.findMatchHighlight": "TEAL",
 		"minimap.selectionHighlight": "MEDIUM_1",
 		"minimap.selectionOccurrenceHighlight": "MEDIUM_1",
-		"minimapGutter.deletedBackground": "RED_0",
+		"minimapGutter.deletedBackground": "RED",
 		"minimapGutter.modifiedBackground": "ORANGE",
 		"minimapGutter.addedBackground": "MINT",
 		"notificationCenterHeader.background": "SHADOW",
@@ -128,7 +128,7 @@
 		"peekViewEditor.matchHighlightBackground": "DARK_1c0",
 		"peekViewResult.background": "DARK_1c0",
 		"peekViewTitle.background": "DARK_1c0",
-		"problemsErrorIcon.foreground": "RED_0",
+		"problemsErrorIcon.foreground": "RED",
 		"problemsWarningIcon.foreground": "YELLOW",
 		"problemsInfoIcon.foreground": "BLUE",
 		"progressBar.background": "DARK_1",
@@ -169,7 +169,7 @@
 		"tab.unfocusedHoverForeground": "LIGHT_1",
 		"terminal.ansiBlack": "DARK_1",
 		"terminal.ansiWhite": "LIGHT_1",
-		"terminal.ansiRed": "RED_0",
+		"terminal.ansiRed": "RED",
 		"terminal.ansiYellow": "YELLOW",
 		"terminal.ansiGreen": "MINT",
 		"terminal.ansiCyan": "TEAL",
@@ -177,7 +177,7 @@
 		"terminal.ansiMagenta": "PURPLE",
 		"terminal.ansiBrightBlack": "DARK_1",
 		"terminal.ansiBrightWhite": "LIGHT_1",
-		"terminal.ansiBrightRed": "RED_0",
+		"terminal.ansiBrightRed": "RED",
 		"terminal.ansiBrightYellow": "YELLOW",
 		"terminal.ansiBrightGreen": "MINT",
 		"terminal.ansiBrightCyan": "TEAL",
@@ -191,7 +191,7 @@
 		"textBlockQuote.background": "MEDIUM_1",
 		"textLink.activeForeground": "BLUEc0",
 		"textLink.foreground": "BLUE",
-		"textPreformat.foreground": "RED_1",
+		"textPreformat.foreground": "CORAL",
 		"titleBar.activeBackground": "DARK_1",
 		"titleBar.activeForeground": "LIGHT_1",
 		"titleBar.inactiveBackground": "DARK_1",
@@ -239,7 +239,7 @@
 			"name": "Built-in constant",
 			"scope": "constant.language",
 			"settings": {
-				"foreground": "RED_0",
+				"foreground": "RED",
 				"fontStyle": "italic"
 			}
 		},
@@ -257,7 +257,7 @@
 			"name": "Member Variable",
 			"scope": "variable.member",
 			"settings": {
-				"foreground": "RED_0"
+				"foreground": "RED"
 			}
 		},
 		{
@@ -275,7 +275,7 @@
 			"name": "Operators",
 			"scope": "keyword.operator",
 			"settings": {
-				"foreground": "RED_1"
+				"foreground": "CORAL"
 			}
 		},
 		{
@@ -325,7 +325,7 @@
 			"name": "Storage",
 			"scope": "storage",
 			"settings": {
-				"foreground": "RED_0"
+				"foreground": "RED"
 			}
 		},
 		{
@@ -374,7 +374,7 @@
 			"name": "Language variable",
 			"scope": "variable.language",
 			"settings": {
-				"foreground": "RED_0",
+				"foreground": "RED",
 				"fontStyle": "italic"
 			}
 		},
@@ -382,7 +382,7 @@
 			"name": "Tag name",
 			"scope": "entity.name.tag",
 			"settings": {
-				"foreground": "RED_0"
+				"foreground": "RED"
 			}
 		},
 		{
@@ -436,7 +436,7 @@
 			"name": "Invalid",
 			"scope": "invalid",
 			"settings": {
-				"foreground": "RED_0"
+				"foreground": "RED"
 			}
 		},
 		{
@@ -471,14 +471,14 @@
 			"name": "markup headings",
 			"scope": "markup.heading punctuation.definition.heading",
 			"settings": {
-				"foreground": "RED_1"
+				"foreground": "CORAL"
 			}
 		},
 		{
 			"name": "markup h1",
 			"scope": "markup.heading.1 punctuation.definition.heading",
 			"settings": {
-				"foreground": "RED_0"
+				"foreground": "RED"
 			}
 		},
 		{
@@ -622,7 +622,7 @@
 			"name": "diff.deleted",
 			"scope": "markup.deleted",
 			"settings": {
-				"foreground": "RED_0"
+				"foreground": "RED"
 			}
 		},
 		{
@@ -649,13 +649,13 @@
 		{
 			"scope": "constant.numeric.line-number.match",
 			"settings": {
-				"foreground": "RED_0"
+				"foreground": "RED"
 			}
 		},
 		{
 			"scope": "message.error",
 			"settings": {
-				"foreground": "RED_0"
+				"foreground": "RED"
 			}
 		},
 		{
