@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 > Author: [mightbesimon](https://github.com/mightbesimon)
 
+## v1.0.0 - 31 Oct 2022
+
+- editor rulers
+- terminal logs
+
 ## v0.99.99 — 27 July 2022
 
 Initial pre-release

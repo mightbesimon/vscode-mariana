@@ -665,6 +665,35 @@
 			"settings": {
 				"foreground": "BLUE"
 			}
+		},
+		{
+			"name": "log error",
+			"scope": "log.error",
+			"settings": {
+				"foreground": "RED",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": "log.info",
+			"settings": {
+				"foreground": "MINT",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": "log.debug",
+			"settings": {
+				"foreground": "BLUE",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": "log.warning",
+			"settings": {
+				"foreground": "ORANGE",
+				"fontStyle": "bold"
+			}
 		}
 	]
 }
