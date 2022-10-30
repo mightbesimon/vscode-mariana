@@ -26,7 +26,6 @@ class Colour(ABC):
 	def to_rgba(self) -> 'rgba':
 		raise NotImplemented
 
-	@abstractmethod
 	def to_hex(self) -> str:
 		c = self.to_rgba()
 		alpha = f'{round(c.a*255):02x}' if c.a is not None and c.a!=1 else ''

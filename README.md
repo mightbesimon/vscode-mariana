@@ -10,8 +10,6 @@ Wow this took way too long 😅
 
 # Todo List
 
-🚧 ruler
-
 🚧 diff editor
 
 🚧 merge conflict
@@ -53,10 +51,6 @@ Wow this took way too long 😅
 🚧 ports
 
 🚧 extension colours
-
-✅ unit tests
-
-✅ basically 80% of the work
 
 > more ideas welcome 🙂
 >

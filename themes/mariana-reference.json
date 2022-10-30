@@ -1,5 +1,5 @@
 {
-	"name": "Mariana (Pro)",
+	"name": "Mariana",
 	"type": "dark",
 	"colors": {
 		"focusBorder": "TRANSPARENT",
@@ -20,7 +20,6 @@
 		"dropdown.listBackground": "DARK_2",
 		"editor.foreground": "LIGHT_1",
 		"editor.background": "MEDIUM_0",
-		"editor.foldBackground": "BLUE40",
 		"editor.lineHighlightBackground": "MEDIUM_1",
 		"editor.hoverHighlightBackground": "MEDIUM_1",
 		"editor.selectionBackground": "MEDIUM_1",
@@ -55,6 +54,7 @@
 		"editorGutter.addedBackground": "MINT",
 		"editorGutter.modifiedBackground": "ORANGE",
 		"editorGutter.deletedBackground": "RED",
+		"editorRuler.foreground": "MEDIUM_1",
 		"editorIndentGuide.background": "MEDIUM_1",
 		"editorOverviewRuler.findMatchForeground": "YELLOW40",
 		"editorOverviewRuler.rangeHighlightForeground": "YELLOW40",
@@ -152,6 +152,7 @@
 		"statusBar.foreground": "LIGHT_1",
 		"statusBar.background": "DARK_0",
 		"statusBar.debuggingBackground": "ORANGE",
+		"statusBar.debuggingForeground": "DARK_0",
 		"statusBar.noFolderBackground": "DARK_2",
 		"statusBarItem.hoverBackground": "MEDIUM_060",
 		"statusBarItem.activeBackground": "MEDIUM_0a0",
