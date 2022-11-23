@@ -1,7 +1,7 @@
-# Mariana
+# Mariana ![version](https://img.shields.io/visual-studio-marketplace/v/mightbesimon.mariana-sublime?label=)
 
 [![sponsor](https://img.shields.io/github/sponsors/mightbesimon?color=red&label=Sponsor&logo=github)](https://github.com/sponsors/mightbesimon)
-![downloads](https://img.shields.io/vscode-marketplace/i/mightbesimon.emoji-icons?color=white&label=&logo=visualstudiocode&logoColor=blue)
+![downloads](https://img.shields.io/vscode-marketplace/i/mightbesimon.mariana-sublime?color=white&label=&logo=visualstudiocode&logoColor=blue)
 ![publish](https://github.com/mightbesimon/vscode-mariana/actions/workflows/publish.yml/badge.svg)
 
 > I already tried the other ones so you don't need to.
