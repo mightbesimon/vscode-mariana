@@ -1,4 +1,8 @@
-# Mariana ![](https://github.com/mightbesimon/vscode-mariana/actions/workflows/publish.yml/badge.svg)
+# Mariana
+
+[![sponsor](https://img.shields.io/github/sponsors/mightbesimon?color=red&label=Sponsor&logo=github)](https://github.com/sponsors/mightbesimon)
+![downloads](https://img.shields.io/vscode-marketplace/i/mightbesimon.emoji-icons?color=white&label=&logo=visualstudiocode&logoColor=blue)
+![publish](https://github.com/mightbesimon/vscode-mariana/actions/workflows/publish.yml/badge.svg)
 
 > I already tried the other ones so you don't need to.
 
@@ -9,6 +13,12 @@ Wow this took way too long 😅
 ![preview](thumbnails/mariana.png)
 
 # Todo List
+
+<details>
+
+<summary>
+	<strong>click</strong> 👇 to see todo items 👉 <em>if you'd like to contribute</em> 👈
+</summary>
 
 🚧 diff editor
 
@@ -52,6 +62,8 @@ Wow this took way too long 😅
 
 🚧 extension colours
 
+</details>
+
 > more ideas welcome 🙂
 >
 > PRs welcome 👨‍🍳👌💋
@@ -65,12 +77,14 @@ Wow this took way too long 😅
 - **Simon** - [mightbesimon](https://github.com/mightbesimon)
 - [gijocode](https://github.com/gijocode)
 - [guillemap](https://github.com/guillemap)
-- you?
+- 👉 you? 👈
 
 # Colour Reference
 
 ```python
-class Mariana(Palette):
+class Mariana(metaclass=enum[Colour]):
+	'''	mariana theme from sublime
+	'''
 	MARIANA  = hsla(210, 15, 22)
 	DARK_0   = MARIANA.clone(l=11)
 	DARK_1   = MARIANA.clone(l=13)
