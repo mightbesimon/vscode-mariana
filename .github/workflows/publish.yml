@@ -5,10 +5,38 @@ on:
     tags:
       - v*.*.*
 
+env:
+  PYTHON_VERSION: '3.8.9'
+
 jobs:
-  publish:
+  build:
+    name: 🔧 build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - run: echo VERSION=${GITHUB_REF#refs/tags/v} >> $GITHUB_ENV
-      - run: npx vsce publish ${{ env.VERSION }} -p ${{ secrets.VSCE_PAT }} --no-git-tag-version
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v3
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        cache: pip
+    - run: pip install -r requirements.txt
+    - run: python3 mariana.py
+    - uses: actions/upload-artifact@v3
+      with:
+        name: build
+        path: |
+          themes/mariana-color-theme.json
+          thumbnails/
+          *.md
+          package.json
+
+  publish:
+    needs: build
+    name: 🚀 publish
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/download-artifact@v3
+      with:
+        name: build
+        path: .
+    - run: echo VERSION=${GITHUB_REF#refs/tags/v} >> $GITHUB_ENV
+    - run: npx vsce publish ${{ env.VERSION }} -p ${{ secrets.VSCE_PAT }} --no-git-tag-version
