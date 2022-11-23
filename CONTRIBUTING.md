@@ -2,7 +2,7 @@
 
 Thank you for either opening a pull request or an issue. I makes me feel like people like using my creations and care enough to give back! 😊
 
-For the best chance of your contributions to make into the next release, please follow these steps for pull requests and issues respectively.
+For the best chance of your contributions making into the next release, please follow these steps for pull requests and issues respectively.
 
 ## Pull Requests
 

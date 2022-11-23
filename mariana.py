@@ -6,7 +6,9 @@
 	explicit or implicit permission.
 '''
 
-from colour.palette import MetaPalette, Mariana
+from lifehacks.colour import Colour
+from lifehacks.colour.palette import Mariana
+from lifehacks.metaclasses import enum
 
 
 class ThemeReference:
@@ -14,7 +16,7 @@ class ThemeReference:
 	def __init__(self, filename:str) -> None:
 		self.filename = filename
 
-	def use_themes(self, *themes:MetaPalette) -> 'ThemeReference':
+	def use_themes(self, *themes:enum[Colour]) -> 'ThemeReference':
 		self.themes = themes
 		return self
 
@@ -22,7 +24,7 @@ class ThemeReference:
 		with open(self.filename, 'r') as file:
 			content = file.read()
 
-		content = (content
+		content = ( content
 			.replace(': ', ':')
 			.replace('\t', '' )
 			.replace('\n', '' )
@@ -41,9 +43,9 @@ class ThemeReference:
 ################################################################
 #######                 MAIN STARTS HERE                 #######
 ################################################################
-if __name__ == '__main__':
-	(
-		ThemeReference(filename='themes/mariana-reference.json')
-			.use_themes(Mariana)
-			.export_color_theme(filename='themes/mariana-color-theme.json')
-	)
+if __name__ == '__main__':\
+(
+	ThemeReference(filename='themes/mariana-reference.json')
+		.use_themes(Mariana)
+		.export_color_theme(filename='themes/mariana-color-theme.json')
+)

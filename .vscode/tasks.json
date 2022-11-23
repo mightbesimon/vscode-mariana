@@ -12,5 +12,10 @@
 				"isDefault": true,
 			},
 		},
+		{
+			"label": "install",
+			"type": "shell",
+			"command": "pip3 install -r requirements.txt",
+		},
 	]
 }
