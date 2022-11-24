@@ -7,9 +7,20 @@
 		"color": "#303841",
 		"theme": "dark"
 	},
+	"markdown": "github",
+	"badges": [
+		{
+			"url": "https://github.com/mightbesimon/vscode-mariana/actions/workflows/publish.yml/badge.svg",
+			"href": "https://mightbesimon.com",
+			"description": "publish"
+		}
+	],
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/mightbesimon/vscode-mariana/"
+	},
+	"sponsor": {
+		"url": "https://github.com/sponsors/mightbesimon"
 	},
 	"author": "mightbesimon",
 	"publisher": "mightbesimon",
