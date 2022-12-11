@@ -1,4 +1,4 @@
-name: publish
+name: publish 🚀
 
 on:
   push:
@@ -6,11 +6,11 @@ on:
       - v*.*.*
 
 env:
-  PYTHON_VERSION: '3.8.9'
+  PYTHON_VERSION: '3.9'
 
 jobs:
   build:
-    name: 🔧 build
+    name: build 🔧
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -31,12 +31,14 @@ jobs:
 
   publish:
     needs: build
-    name: 🚀 publish
+    name: publish 🚀
     runs-on: ubuntu-latest
     steps:
     - uses: actions/download-artifact@v3
       with:
         name: build
         path: .
-    - run: echo VERSION=${GITHUB_REF#refs/tags/v} >> $GITHUB_ENV
-    - run: npx vsce publish ${{ env.VERSION }} -p ${{ secrets.VSCE_PAT }} --no-git-tag-version
+    - run: >
+        npx vsce publish ${GITHUB_REF#refs/tags/v}
+        -p ${{ secrets.VSCE_PAT }}
+        --no-git-tag-version

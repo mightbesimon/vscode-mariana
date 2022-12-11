@@ -7,11 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 > Author: [mightbesimon](https://github.com/mightbesimon)
 
-## v1.0.0 - 31 Oct 2022
+## v1.1.1 - 12 December 2022
 
-- editor rulers
-- terminal logs
+- 📚 [doc]: update badges and changelogs
+
+## v1.1.0 - 24 November 2022
+
+- 🚀 [CI/CD]: generate theme json file at build
+- ✨ [feature]: terminal cursor to orange
+- ✨ [feature]: orange button text to dark
+
+## v1.0.0 - 31 October 2022
+
+- ✨ [feature]: editor rulers
+- ✨ [feature]: terminal logs
 
 ## v0.99.99 — 27 July 2022
 
 Initial pre-release
+
+- ✨ [feature]: marinana theme ported from sublime

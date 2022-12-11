@@ -1,6 +1,6 @@
 # Mariana ![version](https://img.shields.io/visual-studio-marketplace/v/mightbesimon.mariana-sublime?label=)
 
-[![sponsor](https://img.shields.io/github/sponsors/mightbesimon?color=red&label=Sponsor&logo=github)](https://github.com/sponsors/mightbesimon)
+[![sponsor](https://img.shields.io/badge/-Sponsor_Us_-%23d73a49)](https://github.com/sponsors/mightbesimon)
 ![downloads](https://img.shields.io/vscode-marketplace/i/mightbesimon.mariana-sublime?color=white&label=&logo=visualstudiocode&logoColor=blue)
 ![publish](https://github.com/mightbesimon/vscode-mariana/actions/workflows/publish.yml/badge.svg)
 
