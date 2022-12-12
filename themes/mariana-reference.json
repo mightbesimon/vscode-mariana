@@ -206,11 +206,19 @@
 			"scope": [
 				"comment",
 				"punctuation.definition.comment",
+			],
+			"settings": {
+				"foreground": "LIGHT_0"
+			}
+		},
+		{
+			"name": "Docstring",
+			"scope": [
 				"string.quoted.docstring",
 				"string.quoted.docstring punctuation.definition"
 			],
 			"settings": {
-				"foreground": "LIGHT_0"
+				"foreground": "MINT"
 			}
 		},
 		{
