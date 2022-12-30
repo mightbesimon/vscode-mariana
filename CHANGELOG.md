@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 > Author: [mightbesimon](https://github.com/mightbesimon)
 
+## v1.1.2 - 31 December 2022
+
+- ✨ [feature]: add bright black and white to terminal
+
 ## v1.1.1 - 12 December 2022
 
 - 📚 [doc]: update badges and changelogs
