@@ -21,6 +21,7 @@
 		"dropdown.listBackground": "DARK_2",
 		"editor.foreground": "LIGHT_1",
 		"editor.background": "MEDIUM_0",
+		"editor.foldBackground": "BLUE40",
 		"editor.lineHighlightBackground": "MEDIUM_1",
 		"editor.hoverHighlightBackground": "MEDIUM_1",
 		"editor.selectionBackground": "MEDIUM_1",
@@ -153,7 +154,7 @@
 		"statusBar.foreground": "LIGHT_1",
 		"statusBar.background": "DARK_0",
 		"statusBar.debuggingBackground": "ORANGE",
-		"statusBar.debuggingForeground": "DARK_0",
+		"statusBar.debuggingForeground": "DARK_1",
 		"statusBar.noFolderBackground": "DARK_2",
 		"statusBarItem.hoverBackground": "MEDIUM_060",
 		"statusBarItem.activeBackground": "MEDIUM_0a0",
@@ -246,10 +247,35 @@
 			}
 		},
 		{
-			"name": "User-defined constant",
+			"name": "Function type",
+			"scope": "support.type",
+			"settings": {
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "User-defined constant character placeholder Python",
 			"scope": [
-				"constant.character",
-				"constant.other"
+				"meta.fstring.python constant.character.format.placeholder"
+			],
+			"settings": {
+				"foreground": "LIGHT_1"
+			}
+		},
+		{
+			"name": "Class",
+			"scope": [
+				"entity.name.type.class"
+			],
+			"settings": {
+				"foreground": "ORANGE",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "User-defined constant character",
+			"scope": [
+				"constant.character"
 			],
 			"settings": {
 				"foreground": "PURPLE"
@@ -346,6 +372,32 @@
 			}
 		},
 		{
+			"name": "Decorator name",
+			"scope": "entity.name.function.decorator",
+			"settings": {
+				"foreground": "BLUE"
+			}
+		},
+		{
+			"name": "Decorator puntuation",
+			"scope": "punctuation.definition.decorator",
+			"settings": {
+				"foreground": "TEAL"
+			}
+		},
+		{
+			"name": "Entity name type module",
+			"scope": [
+				"entity.name.type.module",
+				"entity.name.type",
+				"punctuation.definition.typeparameters"
+			],
+			"settings": {
+				"foreground": "BLUE",
+				"fontStyle": "italic"
+			}
+		},
+		{
 			"name": "Entity name",
 			"scope": [
 				"entity.name",
@@ -355,6 +407,15 @@
 			],
 			"settings": {
 				"foreground": "ORANGE"
+			}
+		},
+		{
+			"name": "Entity name",
+			"scope": [
+				"meta.function-call entity.name.function"
+			],
+			"settings": {
+				"foreground": "BLUE"
 			}
 		},
 		{
@@ -446,6 +507,37 @@
 			"scope": "invalid.deprecated",
 			"settings": {
 				"foreground": "ORANGE"
+			}
+		},
+		{
+			"name": "Constant object",
+			"scope": [
+				"variable.other.constant.object"
+			],
+			"settings": {
+				"foreground": "BLUE",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Component",
+			"scope": "support.class.component",
+			"settings": {
+				"foreground": "RED"
+			}
+		},
+		{
+			"name": "Storage modifier",
+			"scope": "storage.modifier",
+			"settings": {
+				"foreground": "PURPLE"
+			}
+		},
+		{
+			"name": "Storage modifier Python",
+			"scope": "source.python storage.modifier",
+			"settings": {
+				"foreground": "RED"
 			}
 		},
 		{
@@ -649,6 +741,167 @@
 			}
 		},
 		{
+			"name": "JSON Properties",
+			"scope": "support.type.property-name.json",
+			"settings": {
+				"foreground": "MINT",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Graphql type",
+			"scope": "support.type.graphql",
+			"settings": {
+				"foreground": "ORANGE",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Graphql referenced type",
+			"scope": [
+				"meta.type.list.graphql support.type.graphql",
+				"meta.type.object.graphql support.type.graphql"
+			],
+			"settings": {
+				"foreground": "LIGHT_1"
+			}
+		},
+		{
+			"name": "Graphql variable",
+			"scope": [
+				"variable.graphql",
+				"constant.character.enum.graphql"
+			],
+			"settings": {
+				"foreground": "ORANGE"
+			}
+		},
+		{
+			"name": "Graphql string",
+			"scope": [
+				"meta.type.interface.graphql meta.type.object.graphql meta.variables.graphql support.type.graphql",
+				"meta.type.object.graphql meta.variables.graphql",
+				"graphql.description.SINGLELINE"
+			],
+			"settings": {
+				"foreground": "MINT"
+			}
+		},
+		{
+			"name": "Graphql entity",
+			"scope": "entity.name.function.directive.graphql",
+			"settings": {
+				"foreground": "BLUE"
+			}
+		},
+		{
+			"name": "Graphql braces",
+			"scope": "meta.brace.square.graphql",
+			"settings": {
+				"foreground": "RED"
+			}
+		},
+		{
+			"name": "Solidity pragma name",
+			"scope": "source.solidity entity.name.tag.pragma",
+			"settings": {
+				"foreground": "PURPLE"
+			}
+		},
+		{
+			"name": "Solidity pragma constant",
+			"scope": "source.solidity constant.other.pragma",
+			"settings": {
+				"foreground": "ORANGE"
+			}
+		},
+		{
+			"name": "Solidity interface",
+			"scope": "source.solidity entity.name.type.interface",
+			"settings": {
+				"foreground": "LIGHT_1",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Solidity entity name type",
+			"scope": [
+				"source.solidity entity.name.type",
+				"source.solidity support.type.primitive",
+				"source.solidity storage.type.modifier"
+			],
+			"settings": {
+				"foreground": "RED"
+			}
+		},
+		{
+			"name": "Solidity entity name type",
+			"scope": [
+				"source.solidity entity.name.type.event",
+				"source.solidity entity.name.type.contract"
+			],
+			"settings": {
+				"foreground": "BLUE"
+			}
+		},
+		{
+			"name": "Solidity modifier",
+			"scope": "source.solidity entity.name.function.modifier",
+			"settings": {
+				"foreground": "BLUE",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Solidity comments",
+			"scope": [
+				"comment.block.documentation",
+				"comment.block.documentation storage.type"
+			],
+			"settings": {
+				"foreground": "LIGHT_0"
+			}
+		},
+		{
+			"name": "Solidity library",
+			"scope": "entity.name.type.library",
+			"settings": {
+				"foreground": "LIGHT_1",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Solidity language variable",
+			"scope": "source.solidity variable.language",
+			"settings": {
+				"foreground": "PURPLE"
+			}
+		},
+		{
+			"name": "Solidity mapping",
+			"scope": "source.solidity keyword.operator.mapping",
+			"settings": {
+				"foreground": "PURPLE"
+			}
+		},
+		{
+			"name": "Rainbow csv 0",
+			"scope": [
+				"rainbowgroup markup.bold",
+				"rainbowgroup entity.name.type"
+			],
+			"settings": {
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Rainbow csv 1",
+			"scope": "rainbowgroup constant.numeric",
+			"settings": {
+				"foreground": "PURPLE"
+			}
+		},
+		{
 			"scope": "constant.numeric.line-number.match",
 			"settings": {
 				"foreground": "RED"
@@ -676,6 +929,7 @@
 			}
 		},
 		{
+			"name": "log info",
 			"scope": "log.info",
 			"settings": {
 				"foreground": "MINT",
@@ -683,6 +937,7 @@
 			}
 		},
 		{
+			"name": "log debug",
 			"scope": "log.debug",
 			"settings": {
 				"foreground": "BLUE",
@@ -690,6 +945,7 @@
 			}
 		},
 		{
+			"name": "log warning",
 			"scope": "log.warning",
 			"settings": {
 				"foreground": "ORANGE",
