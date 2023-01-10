@@ -154,7 +154,7 @@
 		"statusBar.foreground": "LIGHT_1",
 		"statusBar.background": "DARK_0",
 		"statusBar.debuggingBackground": "ORANGE",
-		"statusBar.debuggingForeground": "DARK_1",
+		"statusBar.debuggingForeground": "DARK_0",
 		"statusBar.noFolderBackground": "DARK_2",
 		"statusBarItem.hoverBackground": "MEDIUM_060",
 		"statusBarItem.activeBackground": "MEDIUM_0a0",
