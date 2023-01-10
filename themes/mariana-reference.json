@@ -233,7 +233,7 @@
 			}
 		},
 		{
-			"name": "Punctuation Python",
+			"name": "Python Punctuation",
 			"scope": [
 				"source.python punctuation.definition.arguments",
 				"source.python punctuation.definition.parameters",
@@ -245,7 +245,7 @@
 			}
 		},
 		{
-			"name": "Punctuation TypeScript",
+			"name": "TypeScript Punctuation",
 			"scope": [
 				"source.ts punctuation.definition.parameters",
 				"source.ts punctuation.definition.block",
@@ -280,7 +280,7 @@
 			}
 		},
 		{
-			"name": "User-defined constant character placeholder Python",
+			"name": "Python User-defined constant character placeholder",
 			"scope": [
 				"meta.fstring.python constant.character.format.placeholder"
 			],
@@ -289,13 +289,12 @@
 			}
 		},
 		{
-			"name": "Class",
+			"name": "Python User-defined constant character placeholder",
 			"scope": [
-				"entity.name.type.class"
+				"source.python meta.format constant.character.format.placeholder"
 			],
 			"settings": {
-				"foreground": "ORANGE",
-				"fontStyle": ""
+				"foreground": "TEAL"
 			}
 		},
 		{
@@ -433,6 +432,16 @@
 			],
 			"settings": {
 				"foreground": "ORANGE"
+			}
+		},
+		{
+			"name": "Entity name type Class",
+			"scope": [
+				"entity.name.type.class"
+			],
+			"settings": {
+				"foreground": "ORANGE",
+				"fontStyle": ""
 			}
 		},
 		{
@@ -825,6 +834,51 @@
 			"scope": "meta.brace.square.graphql",
 			"settings": {
 				"foreground": "RED"
+			}
+		},
+		{
+			"name": "TypeScript annotation",
+			"scope": "keyword.operator.type.annotation.tsx",
+			"settings": {
+				"foreground": "LIGHT_0"
+			}
+		},
+		{
+			"name": "TypeScript keyword control",
+			"scope": "source.ts keyword.control",
+			"settings": {
+				"foreground": "CORAL"
+			}
+		},
+		{
+			"name": "TypeScript constant",
+			"scope": [
+				"variable.other.constant entity.name.function.tsx",
+				"meta.definition.property entity.name.function.tsx"
+			],
+			"settings": {
+				"foreground": "LIGHT_1"
+			}
+		},
+		{
+			"name": "TypeScript variable",
+			"scope": "variable.other.readwrite.tsx",
+			"settings": {
+				"foreground": "LIGHT_1"
+			}
+		},
+		{
+			"name": "TypeScript parameter",
+			"scope": "meta.object.member.tsx variable.other.readwrite.tsx",
+			"settings": {
+				"foreground": "ORANGE"
+			}
+		},
+		{
+			"name": "TypeScript modifier",
+			"scope": "source.tsx storage.modifier",
+			"settings": {
+				"fontStyle": "italic"
 			}
 		},
 		{
