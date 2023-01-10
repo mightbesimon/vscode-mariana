@@ -233,7 +233,7 @@
 			}
 		},
 		{
-			"name": "Punctuation definition Python",
+			"name": "Punctuation Python",
 			"scope": [
 				"source.python punctuation.definition.arguments",
 				"source.python punctuation.definition.parameters",
@@ -245,7 +245,7 @@
 			}
 		},
 		{
-			"name": "Punctuation definition TypeScript",
+			"name": "Punctuation TypeScript",
 			"scope": [
 				"source.ts punctuation.definition.parameters",
 				"source.ts punctuation.definition.block",
