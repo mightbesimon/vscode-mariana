@@ -275,6 +275,16 @@
 			}
 		},
 		{
+			"name": "Punctuation definition TypeScript",
+			"scope": [
+				"source.ts punctuation.definition.parameters",
+				"source.ts punctuation.definition.block"
+			],
+			"settings": {
+				"foreground": "LIGHT_1"
+			}
+		},
+		{
 			"name": "Class",
 			"scope": [
 				"entity.name.type.class"
