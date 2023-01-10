@@ -263,6 +263,18 @@
 			}
 		},
 		{
+			"name": "Punctuation definition Python",
+			"scope": [
+				"source.python punctuation.definition.arguments",
+				"source.python punctuation.definition.parameters",
+				"source.python punctuation.definition.list",
+				"source.python punctuation.definition.dict"
+			],
+			"settings": {
+				"foreground": "LIGHT_1"
+			}
+		},
+		{
 			"name": "Class",
 			"scope": [
 				"entity.name.type.class"
