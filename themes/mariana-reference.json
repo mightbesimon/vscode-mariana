@@ -225,10 +225,36 @@
 			"name": "Punctuation",
 			"scope": [
 				"punctuation.definition",
-				"-punctuation.definition.numeric.base"
+				"-punctuation.definition.numeric.base",
+				"punctuation.section.embedded"
 			],
 			"settings": {
 				"foreground": "TEAL"
+			}
+		},
+		{
+			"name": "Punctuation definition Python",
+			"scope": [
+				"source.python punctuation.definition.arguments",
+				"source.python punctuation.definition.parameters",
+				"source.python punctuation.definition.list",
+				"source.python punctuation.definition.dict"
+			],
+			"settings": {
+				"foreground": "LIGHT_1"
+			}
+		},
+		{
+			"name": "Punctuation definition TypeScript",
+			"scope": [
+				"source.ts punctuation.definition.parameters",
+				"source.ts punctuation.definition.block",
+				"source.tsx punctuation.definition.parameters",
+				"source.tsx punctuation.definition.block",
+				"source.tsx punctuation.definition.binding-pattern"
+			],
+			"settings": {
+				"foreground": "LIGHT_1"
 			}
 		},
 		{
@@ -257,28 +283,6 @@
 			"name": "User-defined constant character placeholder Python",
 			"scope": [
 				"meta.fstring.python constant.character.format.placeholder"
-			],
-			"settings": {
-				"foreground": "LIGHT_1"
-			}
-		},
-		{
-			"name": "Punctuation definition Python",
-			"scope": [
-				"source.python punctuation.definition.arguments",
-				"source.python punctuation.definition.parameters",
-				"source.python punctuation.definition.list",
-				"source.python punctuation.definition.dict"
-			],
-			"settings": {
-				"foreground": "LIGHT_1"
-			}
-		},
-		{
-			"name": "Punctuation definition TypeScript",
-			"scope": [
-				"source.ts punctuation.definition.parameters",
-				"source.ts punctuation.definition.block"
 			],
 			"settings": {
 				"foreground": "LIGHT_1"
