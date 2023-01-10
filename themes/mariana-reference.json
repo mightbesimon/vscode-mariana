@@ -30,7 +30,7 @@
 		"editor.selectionHighlightBackground": "MEDIUM_0",
 		"editor.findMatchBackground": "YELLOW40",
 		"editor.findMatchHighlightBorder": "TEAL",
-		"editor.findMatchHighlightBackground": "MEDIUM_0",
+		"editor.findMatchHighlightBackground": "TRANSPARENT",
 		"editor.findRangeHighlightBorder": "TEAL",
 		"editor.findRangeHighlightBackground": "MEDIUM_0",
 		"editor.rangeHighlightBorder": "TEAL",
