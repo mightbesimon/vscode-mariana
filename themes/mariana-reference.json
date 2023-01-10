@@ -845,7 +845,7 @@
 		},
 		{
 			"name": "TypeScript keyword control",
-			"scope": "source.ts keyword.control",
+			"scope": "source.ts meta.function meta.block keyword.control.as",
 			"settings": {
 				"foreground": "CORAL"
 			}
