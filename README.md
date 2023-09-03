@@ -54,8 +54,6 @@ Wow this took way too long 😅
 
 🚧 debug icons
 
-🚧 notebook
-
 🚧 charts
 
 🚧 ports
