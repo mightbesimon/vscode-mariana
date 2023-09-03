@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 > Author: [mightbesimon](https://github.com/mightbesimon)
 
+## v1.2.0 - 3 September 2023
+
+- ✨ [feature]: add jupyter notebook colours
+- 🧑‍💻 [dev]: use `venv` in export and install tasks
+- 🧑‍💻 [dev]: set pre-launch task to export
+
 ## v1.1.2 - 31 December 2022
 
 - ✨ [feature]: add bright black and white to terminal
