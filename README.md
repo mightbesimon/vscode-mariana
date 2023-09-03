@@ -77,6 +77,7 @@ Wow this took way too long 😅
 - **Simon** - [mightbesimon](https://github.com/mightbesimon)
 - [gijocode](https://github.com/gijocode)
 - [guillemap](https://github.com/guillemap)
+- [Johnnie Gray](https://github.com/jcmgray)
 - 👉 you? 👈
 
 # Colour Reference
