@@ -655,6 +655,14 @@
 			}
 		},
 		{
+			"name": "JSON Properties",	
+			"scope": "support.type.property-name.json",	
+			"settings": {	
+				"foreground": "MINT",	
+				"fontStyle": ""	
+			}	
+		},
+		{
 			"scope": "constant.numeric.line-number.match",
 			"settings": {
 				"foreground": "RED"
