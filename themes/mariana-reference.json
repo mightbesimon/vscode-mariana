@@ -655,6 +655,89 @@
 			}
 		},
 		{
+			"name": "Solidity pragma name",	
+			"scope": "source.solidity entity.name.tag.pragma",	
+			"settings": {	
+				"foreground": "PURPLE"	
+			}	
+		},	
+		{	
+			"name": "Solidity pragma constant",	
+			"scope": "source.solidity constant.other.pragma",	
+			"settings": {	
+				"foreground": "ORANGE"	
+			}	
+		},	
+		{	
+			"name": "Solidity interface",	
+			"scope": "source.solidity entity.name.type.interface",	
+			"settings": {	
+				"foreground": "LIGHT_1",	
+				"fontStyle": ""	
+			}	
+		},	
+		{	
+			"name": "Solidity entity name type",	
+			"scope": [	
+				"source.solidity entity.name.type",	
+				"source.solidity support.type.primitive",	
+				"source.solidity storage.type.modifier"	
+			],	
+			"settings": {	
+				"foreground": "RED"	
+			}	
+		},	
+		{	
+			"name": "Solidity entity name type",	
+			"scope": [	
+				"source.solidity entity.name.type.event",	
+				"source.solidity entity.name.type.contract"	
+			],	
+			"settings": {	
+				"foreground": "BLUE"	
+			}	
+		},	
+		{	
+			"name": "Solidity modifier",	
+			"scope": "source.solidity entity.name.function.modifier",	
+			"settings": {	
+				"foreground": "BLUE",	
+				"fontStyle": "italic"	
+			}	
+		},	
+		{	
+			"name": "Solidity comments",	
+			"scope": [	
+				"comment.block.documentation",	
+				"comment.block.documentation storage.type"	
+			],	
+			"settings": {	
+				"foreground": "LIGHT_0"	
+			}	
+		},	
+		{	
+			"name": "Solidity library",	
+			"scope": "entity.name.type.library",	
+			"settings": {	
+				"foreground": "LIGHT_1",	
+				"fontStyle": ""	
+			}	
+		},	
+		{	
+			"name": "Solidity language variable",	
+			"scope": "source.solidity variable.language",	
+			"settings": {	
+				"foreground": "PURPLE"	
+			}	
+		},	
+		{	
+			"name": "Solidity mapping",	
+			"scope": "source.solidity keyword.operator.mapping",	
+			"settings": {	
+				"foreground": "PURPLE"	
+			}	
+		},
+		{
 			"scope": "constant.numeric.line-number.match",
 			"settings": {
 				"foreground": "RED"
