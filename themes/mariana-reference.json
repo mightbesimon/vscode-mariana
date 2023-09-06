@@ -655,6 +655,116 @@
 			}
 		},
 		{
+			"name": "Rust source",	
+			"scope": "entity.name.namespace.rust",	
+			"settings": {	
+				"foreground": "LIGHT_1"	
+			}	
+		},	
+		{	
+			"name": "Rust punctuation",	
+			"scope": "punctuation.brackets.attribute.rust, punctuation.brackets.round.rust",	
+			"settings": {	
+				"foreground": "LIGHT_1"	
+			}	
+		},	
+		{	
+			"name": "Rust punctuation angle",	
+			"scope": "punctuation.brackets.angle.rust",	
+			"settings": {	
+				"foreground": "TEAL"	
+			}	
+		},	
+		{	
+			"name": "Rust entity",	
+			"scope": "meta.attribute.rust entity.name.type.rust",	
+			"settings": {	
+				"foreground": "LIGHT_1"	
+			}	
+		},	
+		{	
+			"name": "Rust entity name type",	
+			"scope": "entity.name.type.rust",	
+			"settings": {	
+				"foreground": "LIGHT_1",	
+				"fontStyle": ""	
+			}	
+		},	
+		{	
+			"name": "Rust operators",	
+			"scope": "keyword.operator.namespace.rust, punctuation.semi.rust, keyword.operator.arrow.skinny.rust, keyword.operator.access.dot.rust, punctuation.comma.rust, keyword.operator.key-value.rust",	
+			"settings": {	
+				"foreground": "LIGHT_0"	
+			}	
+		},	
+		{	
+			"name": "Rust function macro",	
+			"scope": "entity.name.function.macro.rust",	
+			"settings": {	
+				"foreground": "BLUE",	
+				"fontStyle": "italic"	
+			}	
+		},	
+		{	
+			"name": "Rust other",	
+			"scope": "keyword.other.rust, storage.modifier.mut.rust",	
+			"settings": {	
+				"foreground": "RED"	
+			}	
+		},	
+		{	
+			"name": "Rust use",	
+			"scope": "meta.use.rust keyword.other.rust, meta.use.rust variable.language.super.rust",	
+			"settings": {	
+				"foreground": "PURPLE",	
+				"fontStyle": ""	
+			}	
+		},	
+		{	
+			"name": "Rust fn",	
+			"scope": "keyword.other.fn.rust",	
+			"settings": {	
+				"fontStyle": "italic"	
+			}	
+		},	
+		{	
+			"name": "Rust fn variable",	
+			"scope": "meta.function.definition.rust variable.other.rust",	
+			"settings": {	
+				"foreground": "ORANGE"	
+			}	
+		},	
+		{	
+			"name": "Rust attribute",	
+			"scope": "meta.attribute.rust",	
+			"settings": {	
+				"foreground": "BLUE"	
+			}	
+		},	
+		{	
+			"name": "Rust struct name",	
+			"scope": "entity.name.type.struct.rust",	
+			"settings": {	
+				"foreground": "ORANGE",	
+				"fontStyle": ""	
+			}	
+		},	
+		{	
+			"name": "Rust lifetime",	
+			"scope": "entity.name.type.lifetime.rust, punctuation.definition.lifetime.rust",	
+			"settings": {	
+				"foreground": "RED",	
+				"fontStyle": ""	
+			}	
+		},	
+		{	
+			"name": "Rust numeric",	
+			"scope": "entity.name.type.numeric.rust",	
+			"settings": {	
+				"foreground": "PURPLE"	
+			}	
+		},
+		{
 			"scope": "constant.numeric.line-number.match",
 			"settings": {
 				"foreground": "RED"
