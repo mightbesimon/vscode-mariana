@@ -73,8 +73,8 @@ Wow this took way too long 😅
 # Contributors
 
 - **Simon** - [mightbesimon](https://github.com/mightbesimon)
+- [guillemap](https://github.com/guillemap) ✨
 - [gijocode](https://github.com/gijocode)
-- [guillemap](https://github.com/guillemap)
 - [Johnnie Gray](https://github.com/jcmgray)
 - 👉 you? 👈
 
