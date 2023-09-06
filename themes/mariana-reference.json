@@ -231,7 +231,7 @@
 			"name": "Punctuation",
 			"scope": [
 				"punctuation.definition",
-				"-punctuation.definition.numeric.base",	
+				"-punctuation.definition.numeric.base",
 				"punctuation.section.embedded"
 			],
 			"settings": {
@@ -254,12 +254,12 @@
 			}
 		},
 		{
-			"name": "Function type",	
-			"scope": "support.type",	
-			"settings": {	
-				"fontStyle": "italic"	
-			}	
-		},	
+			"name": "Function type",
+			"scope": "support.type",
+			"settings": {
+				"fontStyle": "italic"
+			}
+		},
 		{
 			"name": "User-defined constant character",
 			"scope": [
@@ -360,31 +360,31 @@
 			}
 		},
 		{
-			"name": "Decorator name",	
-			"scope": "entity.name.function.decorator",	
-			"settings": {	
-				"foreground": "BLUE"	
-			}	
-		},	
-		{	
-			"name": "Decorator puntuation",	
-			"scope": "punctuation.definition.decorator",	
-			"settings": {	
-				"foreground": "TEAL"	
-			}	
-		},	
-		{	
-			"name": "Entity name type module",	
-			"scope": [	
-				"entity.name.type.module",	
-				"entity.name.type",	
-				"punctuation.definition.typeparameters"	
-			],	
-			"settings": {	
-				"foreground": "BLUE",	
-				"fontStyle": "italic"	
-			}	
-		},	
+			"name": "Decorator name",
+			"scope": "entity.name.function.decorator",
+			"settings": {
+				"foreground": "BLUE"
+			}
+		},
+		{
+			"name": "Decorator puntuation",
+			"scope": "punctuation.definition.decorator",
+			"settings": {
+				"foreground": "TEAL"
+			}
+		},
+		{
+			"name": "Entity name type module",
+			"scope": [
+				"entity.name.type.module",
+				"entity.name.type",
+				"punctuation.definition.typeparameters"
+			],
+			"settings": {
+				"foreground": "BLUE",
+				"fontStyle": "italic"
+			}
+		},
 		{
 			"name": "Entity name",
 			"scope": [
@@ -398,24 +398,24 @@
 			}
 		},
 		{
-			"name": "Entity name type Class",	
-			"scope": [	
-				"entity.name.type.class"	
-			],	
-			"settings": {	
-				"foreground": "ORANGE",	
-				"fontStyle": ""	
-			}	
-		},	
-		{	
-			"name": "Entity name",	
-			"scope": [	
-				"meta.function-call entity.name.function"	
-			],	
-			"settings": {	
-				"foreground": "BLUE"	
-			}	
-		},	
+			"name": "Entity name type Class",
+			"scope": [
+				"entity.name.type.class"
+			],
+			"settings": {
+				"foreground": "ORANGE",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Entity name",
+			"scope": [
+				"meta.function-call entity.name.function"
+			],
+			"settings": {
+				"foreground": "BLUE"
+			}
+		},
 		{
 			"name": "Inherited class",
 			"scope": "entity.other.inherited-class",
@@ -508,29 +508,29 @@
 			}
 		},
 		{
-			"name": "Constant object",	
-			"scope": [	
-				"variable.other.constant.object"	
-			],	
-			"settings": {	
-				"foreground": "BLUE",	
-				"fontStyle": "italic"	
-			}	
-		},	
-		{	
-			"name": "Component",	
-			"scope": "support.class.component",	
-			"settings": {	
-				"foreground": "RED"	
-			}	
-		},	
-		{	
-			"name": "Storage modifier",	
-			"scope": "storage.modifier",	
-			"settings": {	
-				"foreground": "PURPLE"	
-			}	
-		},	
+			"name": "Constant object",
+			"scope": [
+				"variable.other.constant.object"
+			],
+			"settings": {
+				"foreground": "BLUE",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Component",
+			"scope": "support.class.component",
+			"settings": {
+				"foreground": "RED"
+			}
+		},
+		{
+			"name": "Storage modifier",
+			"scope": "storage.modifier",
+			"settings": {
+				"foreground": "PURPLE"
+			}
+		},
 		{
 			"name": "YAML Key",
 			"scope": "entity.name.tag.yaml",
