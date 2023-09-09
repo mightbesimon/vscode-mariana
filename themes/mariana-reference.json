@@ -254,6 +254,16 @@
 			}
 		},
 		{
+			"name": "Built-in constant object",
+			"scope": [
+				"variable.other.constant.object"
+			],
+			"settings": {
+				"foreground": "BLUE",
+				"fontStyle": "italic"
+			}
+		},
+		{
 			"name": "User-defined constant character",
 			"scope": [
 				"constant.character"
@@ -503,16 +513,6 @@
 			"scope": "invalid.deprecated",
 			"settings": {
 				"foreground": "ORANGE"
-			}
-		},
-		{
-			"name": "Constant object",
-			"scope": [
-				"variable.other.constant.object"
-			],
-			"settings": {
-				"foreground": "BLUE",
-				"fontStyle": "italic"
 			}
 		},
 		{
