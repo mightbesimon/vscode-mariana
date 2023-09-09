@@ -264,9 +264,17 @@
 			}
 		},
 		{
-			"name": "User-defined constant character",
+			"name": "Ellipsis constant",
+			"scope": "constant.other.ellipsis",
+			"settings": {
+				"foreground": "RED"
+			}
+		},
+		{
+			"name": "User-defined constant",
 			"scope": [
-				"constant.character"
+				"constant.character",
+				"constant.other"
 			],
 			"settings": {
 				"foreground": "PURPLE"
@@ -526,7 +534,7 @@
 			"name": "Storage modifier",
 			"scope": "storage.modifier",
 			"settings": {
-				"foreground": "PURPLE"
+				"foreground": "RED"
 			}
 		},
 		{
