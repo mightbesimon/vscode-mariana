@@ -254,13 +254,6 @@
 			}
 		},
 		{
-			"name": "Function type",
-			"scope": "support.type",
-			"settings": {
-				"fontStyle": "italic"
-			}
-		},
-		{
 			"name": "User-defined constant character",
 			"scope": [
 				"constant.character"
@@ -484,13 +477,18 @@
 			}
 		},
 		{
-			"name": "Library class/type",
-			"scope": [
-				"support.type",
-				"support.class"
-			],
+			"name": "Library class",
+			"scope": "support.class",
 			"settings": {
 				"foreground": "BLUE"
+			}
+		},
+		{
+			"name": "Library type",
+			"scope": "support.type",
+			"settings": {
+				"foreground": "BLUE",
+				"fontStyle": "italic"
 			}
 		},
 		{
