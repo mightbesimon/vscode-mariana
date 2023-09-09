@@ -21,6 +21,7 @@
 		"dropdown.listBackground": "DARK_2",
 		"editor.foreground": "LIGHT_1",
 		"editor.background": "MEDIUM_0",
+		"editor.foldBackground": "BLUE40",
 		"editor.lineHighlightBackground": "MEDIUM_1",
 		"editor.hoverHighlightBackground": "MEDIUM_1",
 		"editor.selectionBackground": "MEDIUM_1",
@@ -29,7 +30,7 @@
 		"editor.selectionHighlightBackground": "MEDIUM_0",
 		"editor.findMatchBackground": "YELLOW40",
 		"editor.findMatchHighlightBorder": "TEAL",
-		"editor.findMatchHighlightBackground": "MEDIUM_0",
+		"editor.findMatchHighlightBackground": "TRANSPARENT",
 		"editor.findRangeHighlightBorder": "TEAL",
 		"editor.findRangeHighlightBackground": "MEDIUM_0",
 		"editor.rangeHighlightBorder": "TEAL",
@@ -230,7 +231,8 @@
 			"name": "Punctuation",
 			"scope": [
 				"punctuation.definition",
-				"-punctuation.definition.numeric.base"
+				"-punctuation.definition.numeric.base",
+				"punctuation.section.embedded"
 			],
 			"settings": {
 				"foreground": "TEAL"
@@ -252,10 +254,16 @@
 			}
 		},
 		{
-			"name": "User-defined constant",
+			"name": "Function type",
+			"scope": "support.type",
+			"settings": {
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "User-defined constant character",
 			"scope": [
-				"constant.character",
-				"constant.other"
+				"constant.character"
 			],
 			"settings": {
 				"foreground": "PURPLE"
@@ -352,6 +360,32 @@
 			}
 		},
 		{
+			"name": "Decorator name",
+			"scope": "entity.name.function.decorator",
+			"settings": {
+				"foreground": "BLUE"
+			}
+		},
+		{
+			"name": "Decorator puntuation",
+			"scope": "punctuation.definition.decorator",
+			"settings": {
+				"foreground": "TEAL"
+			}
+		},
+		{
+			"name": "Entity name type module",
+			"scope": [
+				"entity.name.type.module",
+				"entity.name.type",
+				"punctuation.definition.typeparameters"
+			],
+			"settings": {
+				"foreground": "BLUE",
+				"fontStyle": "italic"
+			}
+		},
+		{
 			"name": "Entity name",
 			"scope": [
 				"entity.name",
@@ -361,6 +395,25 @@
 			],
 			"settings": {
 				"foreground": "ORANGE"
+			}
+		},
+		{
+			"name": "Entity name type Class",
+			"scope": [
+				"entity.name.type.class"
+			],
+			"settings": {
+				"foreground": "ORANGE",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Entity name",
+			"scope": [
+				"meta.function-call entity.name.function"
+			],
+			"settings": {
+				"foreground": "BLUE"
 			}
 		},
 		{
@@ -452,6 +505,30 @@
 			"scope": "invalid.deprecated",
 			"settings": {
 				"foreground": "ORANGE"
+			}
+		},
+		{
+			"name": "Constant object",
+			"scope": [
+				"variable.other.constant.object"
+			],
+			"settings": {
+				"foreground": "BLUE",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Component",
+			"scope": "support.class.component",
+			"settings": {
+				"foreground": "RED"
+			}
+		},
+		{
+			"name": "Storage modifier",
+			"scope": "storage.modifier",
+			"settings": {
+				"foreground": "PURPLE"
 			}
 		},
 		{
