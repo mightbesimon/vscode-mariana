@@ -254,16 +254,27 @@
 			}
 		},
 		{
-			"name": "Function type",
-			"scope": "support.type",
+			"name": "Built-in constant object",
+			"scope": [
+				"variable.other.constant.object"
+			],
 			"settings": {
+				"foreground": "BLUE",
 				"fontStyle": "italic"
 			}
 		},
 		{
-			"name": "User-defined constant character",
+			"name": "Ellipsis constant",
+			"scope": "constant.other.ellipsis",
+			"settings": {
+				"foreground": "RED"
+			}
+		},
+		{
+			"name": "User-defined constant",
 			"scope": [
-				"constant.character"
+				"constant.character",
+				"constant.other"
 			],
 			"settings": {
 				"foreground": "PURPLE"
@@ -374,18 +385,6 @@
 			}
 		},
 		{
-			"name": "Entity name type module",
-			"scope": [
-				"entity.name.type.module",
-				"entity.name.type",
-				"punctuation.definition.typeparameters"
-			],
-			"settings": {
-				"foreground": "BLUE",
-				"fontStyle": "italic"
-			}
-		},
-		{
 			"name": "Entity name",
 			"scope": [
 				"entity.name",
@@ -398,7 +397,19 @@
 			}
 		},
 		{
-			"name": "Entity name type Class",
+			"name": "Entity name type module",
+			"scope": [
+				"entity.name.type.module",
+				"entity.name.type",
+				"punctuation.definition.typeparameters"
+			],
+			"settings": {
+				"foreground": "BLUE",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Entity name type class",
 			"scope": [
 				"entity.name.type.class"
 			],
@@ -408,7 +419,7 @@
 			}
 		},
 		{
-			"name": "Entity name",
+			"name": "Entity name function",
 			"scope": [
 				"meta.function-call entity.name.function"
 			],
@@ -484,13 +495,18 @@
 			}
 		},
 		{
-			"name": "Library class/type",
-			"scope": [
-				"support.type",
-				"support.class"
-			],
+			"name": "Library class",
+			"scope": "support.class",
 			"settings": {
 				"foreground": "BLUE"
+			}
+		},
+		{
+			"name": "Library type",
+			"scope": "support.type",
+			"settings": {
+				"foreground": "BLUE",
+				"fontStyle": "italic"
 			}
 		},
 		{
@@ -508,16 +524,6 @@
 			}
 		},
 		{
-			"name": "Constant object",
-			"scope": [
-				"variable.other.constant.object"
-			],
-			"settings": {
-				"foreground": "BLUE",
-				"fontStyle": "italic"
-			}
-		},
-		{
 			"name": "Component",
 			"scope": "support.class.component",
 			"settings": {
@@ -528,7 +534,7 @@
 			"name": "Storage modifier",
 			"scope": "storage.modifier",
 			"settings": {
-				"foreground": "PURPLE"
+				"foreground": "RED"
 			}
 		},
 		{
