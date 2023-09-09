@@ -377,18 +377,6 @@
 			}
 		},
 		{
-			"name": "Entity name type module",
-			"scope": [
-				"entity.name.type.module",
-				"entity.name.type",
-				"punctuation.definition.typeparameters"
-			],
-			"settings": {
-				"foreground": "BLUE",
-				"fontStyle": "italic"
-			}
-		},
-		{
 			"name": "Entity name",
 			"scope": [
 				"entity.name",
@@ -401,7 +389,19 @@
 			}
 		},
 		{
-			"name": "Entity name type Class",
+			"name": "Entity name type module",
+			"scope": [
+				"entity.name.type.module",
+				"entity.name.type",
+				"punctuation.definition.typeparameters"
+			],
+			"settings": {
+				"foreground": "BLUE",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Entity name type class",
 			"scope": [
 				"entity.name.type.class"
 			],
@@ -411,7 +411,7 @@
 			}
 		},
 		{
-			"name": "Entity name",
+			"name": "Entity name function",
 			"scope": [
 				"meta.function-call entity.name.function"
 			],
