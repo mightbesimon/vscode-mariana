@@ -738,23 +738,6 @@
 			}
 		},
 		{
-			"name": "Rainbow csv 0",
-			"scope": [
-				"rainbowgroup markup.bold",
-				"rainbowgroup entity.name.type"
-			],
-			"settings": {
-				"fontStyle": ""
-			}
-		},
-		{
-			"name": "Rainbow csv 1",
-			"scope": "rainbowgroup constant.numeric",
-			"settings": {
-				"foreground": "PURPLE"
-			}
-		},
-		{
 			"scope": "constant.numeric.line-number.match",
 			"settings": {
 				"foreground": "RED"
@@ -853,6 +836,23 @@
 			"scope": "meta.brace.square.graphql",
 			"settings": {
 				"foreground": "RED"
+			}
+		},
+		{
+			"name": "Rainbow csv 0",
+			"scope": [
+				"rainbowgroup markup.bold",
+				"rainbowgroup entity.name.type"
+			],
+			"settings": {
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Rainbow csv 1",
+			"scope": "rainbowgroup constant.numeric",
+			"settings": {
+				"foreground": "PURPLE"
 			}
 		}
 	]
