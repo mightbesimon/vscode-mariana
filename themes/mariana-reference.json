@@ -738,6 +738,59 @@
 			}
 		},
 		{
+			"name": "Graphql type",
+			"scope": "support.type.graphql",
+			"settings": {
+				"foreground": "ORANGE",
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Graphql referenced type",
+			"scope": [
+				"meta.type.list.graphql support.type.graphql",
+				"meta.type.object.graphql support.type.graphql"
+			],
+			"settings": {
+				"foreground": "LIGHT_1"
+			}
+		},
+		{
+			"name": "Graphql variable",
+			"scope": [
+				"variable.graphql",
+				"constant.character.enum.graphql"
+			],
+			"settings": {
+				"foreground": "ORANGE"
+			}
+		},
+		{
+			"name": "Graphql string",
+			"scope": [
+				"meta.type.interface.graphql meta.type.object.graphql meta.variables.graphql support.type.graphql",
+				"meta.type.object.graphql meta.variables.graphql",
+				"graphql.description.SINGLELINE"
+			],
+			"settings": {
+				"foreground": "MINT"
+			}
+		},
+		{
+			"name": "Graphql entity",
+			"scope": "entity.name.function.directive.graphql",
+			"settings": {
+				"foreground": "BLUE"
+			}
+		},
+		{
+			"name": "Graphql braces",
+			"scope": "meta.brace.square.graphql",
+			"settings": {
+				"foreground": "RED"
+			}
+		},
+		{
 			"scope": "constant.numeric.line-number.match",
 			"settings": {
 				"foreground": "RED"
