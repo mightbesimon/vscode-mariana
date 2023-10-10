@@ -738,6 +738,54 @@
 			}
 		},
 		{
+			"scope": "constant.numeric.line-number.match",
+			"settings": {
+				"foreground": "RED"
+			}
+		},
+		{
+			"scope": "message.error",
+			"settings": {
+				"foreground": "RED"
+			}
+		},
+		{
+			"name": "Object Property JS",
+			"scope": "meta.object-literal.key",
+			"settings": {
+				"foreground": "BLUE"
+			}
+		},
+		{
+			"name": "log error",
+			"scope": "log.error",
+			"settings": {
+				"foreground": "RED",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": "log.info",
+			"settings": {
+				"foreground": "MINT",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": "log.debug",
+			"settings": {
+				"foreground": "BLUE",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": "log.warning",
+			"settings": {
+				"foreground": "ORANGE",
+				"fontStyle": "bold"
+			}
+		},
+		{
 			"name": "Graphql type",
 			"scope": "support.type.graphql",
 			"settings": {
@@ -788,54 +836,6 @@
 			"scope": "meta.brace.square.graphql",
 			"settings": {
 				"foreground": "RED"
-			}
-		},
-		{
-			"scope": "constant.numeric.line-number.match",
-			"settings": {
-				"foreground": "RED"
-			}
-		},
-		{
-			"scope": "message.error",
-			"settings": {
-				"foreground": "RED"
-			}
-		},
-		{
-			"name": "Object Property JS",
-			"scope": "meta.object-literal.key",
-			"settings": {
-				"foreground": "BLUE"
-			}
-		},
-		{
-			"name": "log error",
-			"scope": "log.error",
-			"settings": {
-				"foreground": "RED",
-				"fontStyle": "bold"
-			}
-		},
-		{
-			"scope": "log.info",
-			"settings": {
-				"foreground": "MINT",
-				"fontStyle": "bold"
-			}
-		},
-		{
-			"scope": "log.debug",
-			"settings": {
-				"foreground": "BLUE",
-				"fontStyle": "bold"
-			}
-		},
-		{
-			"scope": "log.warning",
-			"settings": {
-				"foreground": "ORANGE",
-				"fontStyle": "bold"
 			}
 		}
 	]
