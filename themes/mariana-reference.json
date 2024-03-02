@@ -854,6 +854,79 @@
 			"settings": {
 				"foreground": "PURPLE"
 			}
+		},
+		{
+			"name": "Ruby inherited class",
+			"scope": "entity.other.inherited-class.ruby",
+			"settings": {
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Ruby block variable",
+			"scope": "variable.other.block.ruby",
+			"settings": {
+				"foreground": "ORANGE"
+			}
+		},
+		{
+			"name": "Ruby punctuation",
+			"scope": "punctuation.definition.parameters.ruby",
+			"settings": {
+				"foreground": "LIGHT_1"
+			}
+		},
+		{
+			"name": "Ruby class",
+			"scope": "support.class.ruby",
+			"settings": {
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Ruby string embedded line",
+			"scope": [
+				"meta.embedded.line.ruby",
+				"punctuation.section.embedded.begin.ruby",
+				"punctuation.section.embedded.end.ruby"
+			],
+			"settings": {
+				"foreground": "LIGHT_1"
+			}
+		},
+		{
+			"name": "Ruby symbols",
+			"scope": [
+				"constant.language.symbol.hashkey.ruby",
+				"constant.language.symbol.ruby"
+			],
+			"settings": {
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "ERB punctuation embedded",
+			"scope": [
+				"punctuation.section.embedded.begin.erb",
+				"punctuation.section.embedded.end.erb"
+			],
+			"settings": {
+				"foreground": "LIGHT_1"
+			}
+		},
+		{
+			"name": "ERB source embedded",
+			"scope": "source.ruby.embedded.erb",
+			"settings": {
+				"foreground": "LIGHT_1"
+			}
+		},
+		{
+			"name": "Shell command",
+			"scope": "entity.name.command.shell",
+			"settings": {
+				"foreground": "BLUE"
+			}
 		}
 	]
 }
