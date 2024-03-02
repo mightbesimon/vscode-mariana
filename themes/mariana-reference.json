@@ -663,6 +663,18 @@
 			}
 		},
 		{
+			"name": "JSON punctuation",
+			"scope": [
+				"punctuation.definition.array.begin.json",
+				"punctuation.definition.array.end.json",
+				"punctuation.definition.dictionary.begin.json",
+				"punctuation.definition.dictionary.end.json"
+			],
+			"settings": {
+				"foreground": "LIGHT_1"
+			}
+		},
+		{
 			"scope": "constant.numeric.line-number.match",
 			"settings": {
 				"foreground": "RED"
