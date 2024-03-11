@@ -738,6 +738,64 @@
 			}
 		},
 		{
+			"name": "TypeScript Punctuation",
+			"scope": [
+				"source.ts punctuation.definition.parameters",
+				"source.ts punctuation.definition.block",
+				"source.tsx punctuation.definition.parameters",
+				"source.tsx punctuation.definition.block",
+				"source.tsx punctuation.definition.binding-pattern"
+			],
+			"settings": {
+				"foreground": "LIGHT_1"
+			}
+		},
+		{
+			"name": "TypeScript annotation",
+			"scope": "keyword.operator.type.annotation.tsx",
+			"settings": {
+				"foreground": "LIGHT_0"
+			}
+		},
+		{
+			"name": "TypeScript keyword control",
+			"scope": "source.ts meta.function meta.block keyword.control.as",
+			"settings": {
+				"foreground": "CORAL"
+			}
+		},
+		{
+			"name": "TypeScript constant",
+			"scope": [
+				"variable.other.constant entity.name.function.tsx",
+				"meta.definition.property entity.name.function.tsx"
+			],
+			"settings": {
+				"foreground": "LIGHT_1"
+			}
+		},
+		{
+			"name": "TypeScript variable",
+			"scope": "variable.other.readwrite.tsx",
+			"settings": {
+				"foreground": "LIGHT_1"
+			}
+		},
+		{
+			"name": "TypeScript parameter",
+			"scope": "meta.object.member.tsx variable.other.readwrite.tsx",
+			"settings": {
+				"foreground": "ORANGE"
+			}
+		},
+		{
+			"name": "TypeScript modifier",
+			"scope": "source.tsx storage.modifier",
+			"settings": {
+				"fontStyle": "italic"
+			}
+		},
+		{
 			"scope": "constant.numeric.line-number.match",
 			"settings": {
 				"foreground": "RED"
