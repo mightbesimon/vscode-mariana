@@ -7,7 +7,7 @@
 			"label": "export",
 			"type": "shell",
 			"command": [
-				"source venv/bin/activate",
+				"source venv/bin/activate\n",
 				"python3 mariana.py",
 			],
 			"group": {
@@ -19,8 +19,8 @@
 			"label": "install",
 			"type": "shell",
 			"command": [
-				"python3 -m venv venv",
-				"source venv/bin/activate",
+				"python3 -m venv venv\n",
+				"source venv/bin/activate\n",
 				"pip3 install -r requirements.txt",
 			],
 		},
