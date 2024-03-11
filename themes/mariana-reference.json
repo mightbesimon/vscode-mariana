@@ -237,19 +237,6 @@
 			}
 		},
 		{
-			"name": "TypeScript Punctuation",
-			"scope": [
-				"source.ts punctuation.definition.parameters",
-				"source.ts punctuation.definition.block",
-				"source.tsx punctuation.definition.parameters",
-				"source.tsx punctuation.definition.block",
-				"source.tsx punctuation.definition.binding-pattern"
-			],
-			"settings": {
-				"foreground": "LIGHT_1"
-			}
-		},
-		{
 			"name": "Number",
 			"scope": "constant.numeric",
 			"settings": {
@@ -663,6 +650,19 @@
 		{
 			"name": "CSS Properties",
 			"scope": "support.type.property-name",
+			"settings": {
+				"foreground": "LIGHT_1"
+			}
+		},
+		{
+			"name": "TypeScript Punctuation",
+			"scope": [
+				"source.ts punctuation.definition.parameters",
+				"source.ts punctuation.definition.block",
+				"source.tsx punctuation.definition.parameters",
+				"source.tsx punctuation.definition.block",
+				"source.tsx punctuation.definition.binding-pattern"
+			],
 			"settings": {
 				"foreground": "LIGHT_1"
 			}
