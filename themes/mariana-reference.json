@@ -239,18 +239,6 @@
 			}
 		},
 		{
-			"name": "Python Punctuation",
-			"scope": [
-				"source.python punctuation.definition.arguments",
-				"source.python punctuation.definition.parameters",
-				"source.python punctuation.definition.list",
-				"source.python punctuation.definition.dict"
-			],
-			"settings": {
-				"foreground": "LIGHT_1"
-			}
-		},
-		{
 			"name": "Number",
 			"scope": "constant.numeric",
 			"settings": {
@@ -263,24 +251,6 @@
 			"settings": {
 				"foreground": "RED",
 				"fontStyle": "italic"
-			}
-		},
-		{
-			"name": "Python User-defined constant character placeholder",
-			"scope": [
-				"meta.fstring.python constant.character.format.placeholder"
-			],
-			"settings": {
-				"foreground": "LIGHT_1"
-			}
-		},
-		{
-			"name": "Python User-defined constant character placeholder",
-			"scope": [
-				"source.python meta.format constant.character.format.placeholder"
-			],
-			"settings": {
-				"foreground": "TEAL"
 			}
 		},
 		{
@@ -537,13 +507,6 @@
 			}
 		},
 		{
-			"name": "Storage modifier Python",
-			"scope": "source.python storage.modifier",
-			"settings": {
-				"foreground": "RED"
-			}
-		},
-		{
 			"name": "YAML Key",
 			"scope": "entity.name.tag.yaml",
 			"settings": {
@@ -789,6 +752,52 @@
 			"settings": {
 				"foreground": "ORANGE",
 				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Python User-defined constant character placeholder",
+			"scope": [
+				"meta.fstring.python constant.character.format.placeholder"
+			],
+			"settings": {
+				"foreground": "LIGHT_1"
+			}
+		},
+		{
+			"name": "Python User-defined constant character placeholder",
+			"scope": [
+				"source.python meta.format constant.character.format.placeholder"
+			],
+			"settings": {
+				"foreground": "TEAL"
+			}
+		},
+		{
+			"name": "Python User-defined constant",
+			"scope": [
+				"source.python constant.other.caps.python"
+			],
+			"settings": {
+				"foreground": "LIGHT_1"
+			}
+		},
+		{
+			"name": "Python Punctuation",
+			"scope": [
+				"source.python punctuation.definition.arguments",
+				"source.python punctuation.definition.parameters",
+				"source.python punctuation.definition.list",
+				"source.python punctuation.definition.dict"
+			],
+			"settings": {
+				"foreground": "LIGHT_1"
+			}
+		},
+		{
+			"name": "Storage modifier Python",
+			"scope": "source.python storage.modifier",
+			"settings": {
+				"foreground": "RED"
 			}
 		},
 		{
